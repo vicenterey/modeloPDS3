@@ -1,0 +1,4 @@
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:8:
+/home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~

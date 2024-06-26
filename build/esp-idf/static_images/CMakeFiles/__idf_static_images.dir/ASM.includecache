@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image0.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image1.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image2.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image3.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image4.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image5.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image6.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image7.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image8.S
+
+/home/vicenterey/esp/projects_tf/model/person_detection/build/image9.S
+

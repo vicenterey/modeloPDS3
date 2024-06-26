@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles/bootloader
+/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles/bootloader.rule
+/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles/bootloader-complete.rule
+/home/vicenterey/esp/projects_tf/model/person_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/vicenterey/esp/projects_tf/model/person_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/vicenterey/esp/projects_tf/model/person_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/vicenterey/esp/projects_tf/model/person_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/vicenterey/esp/projects_tf/model/person_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/vicenterey/esp/projects_tf/model/person_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/vicenterey/esp/projects_tf/model/person_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

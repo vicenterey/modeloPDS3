@@ -1,0 +1,44 @@
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc: In function 'void mcpwm_example_gpio_initialize()':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:56:21: error: 'MCPWM_UNIT_0' was not declared in this scope
+   56 |     mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM0A, 13);    // Set GPIO 13 as PWM0A, to which servo is connected
+      |                     ^~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:56:35: error: 'MCPWM0A' was not declared in this scope
+   56 |     mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM0A, 13);    // Set GPIO 13 as PWM0A, to which servo is connected
+      |                                   ^~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:56:5: error: 'mcpwm_gpio_init' was not declared in this scope
+   56 |     mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM0A, 13);    // Set GPIO 13 as PWM0A, to which servo is connected
+      |     ^~~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc: In function 'void mcpwm_example_servo_control(void*)':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:78:5: error: 'mcpwm_config_t' was not declared in this scope; did you mean 'gpio_config_t'?
+   78 |     mcpwm_config_t pwm_config;
+      |     ^~~~~~~~~~~~~~
+      |     gpio_config_t
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:79:5: error: 'pwm_config' was not declared in this scope; did you mean 'gpio_config'?
+   79 |     pwm_config.frequency = 50;    // frequency = 50Hz, i.e. for every servo motor time period should be 20ms
+      |     ^~~~~~~~~~
+      |     gpio_config
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:82:31: error: 'MCPWM_UP_COUNTER' was not declared in this scope
+   82 |     pwm_config.counter_mode = MCPWM_UP_COUNTER;
+      |                               ^~~~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:83:28: error: 'MCPWM_DUTY_MODE_0' was not declared in this scope
+   83 |     pwm_config.duty_mode = MCPWM_DUTY_MODE_0;
+      |                            ^~~~~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:84:16: error: 'MCPWM_UNIT_0' was not declared in this scope
+   84 |     mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &pwm_config);    // Configure PWM0A & PWM0B with above settings
+      |                ^~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:84:30: error: 'MCPWM_TIMER_0' was not declared in this scope
+   84 |     mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &pwm_config);    // Configure PWM0A & PWM0B with above settings
+      |                              ^~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:84:5: error: 'mcpwm_init' was not declared in this scope; did you mean 'mcpwm_gen_t'?
+   84 |     mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &pwm_config);    // Configure PWM0A & PWM0B with above settings
+      |     ^~~~~~~~~~
+      |     mcpwm_gen_t
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:90:63: error: 'MCPWM_OPR_A' was not declared in this scope
+   90 |             mcpwm_set_duty_in_us(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_OPR_A, angle);
+      |                                                               ^~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:90:13: error: 'mcpwm_set_duty_in_us' was not declared in this scope
+   90 |             mcpwm_set_duty_in_us(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_OPR_A, angle);
+      |             ^~~~~~~~~~~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/detection_responder.cc.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5675: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
