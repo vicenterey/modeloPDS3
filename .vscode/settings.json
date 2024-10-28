@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "/wsl.localhost/Ubuntu/home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp-nn",
+    "idf.adapterTargetName": "esp32"
+}

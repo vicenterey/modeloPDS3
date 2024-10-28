@@ -20,7 +20,6 @@
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
 
-#include "main_functions.h"
 #include "esp_main.h"
 #include "esp_cli.h"
 #include "esp_timer.h"

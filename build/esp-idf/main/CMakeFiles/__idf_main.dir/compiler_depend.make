@@ -86,49 +86,25 @@ esp-idf/main/CMakeFiles/__idf_main.dir/app_camera_esp.c.obj: ../main/app_camera_
   ../main/esp_main.h
 
 esp-idf/main/CMakeFiles/__idf_main.dir/detection_responder.cc.obj: ../main/detection_responder.cc \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stddef.h \
+  ../main/detection_responder.h \
+  ../components/espressif__esp-tflite-micro/tensorflow/lite/c/common.h \
+  ../components/espressif__esp-tflite-micro/tensorflow/lite/core/c/common.h \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdarg.h \
-  /home/vicenterey/esp/idf/esp-idf/components/newlib/platform_include/sys/reent.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
-  /home/vicenterey/esp/idf/esp-idf/components/newlib/platform_include/sys/lock.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
-  config/sdkconfig.h \
-  /home/vicenterey/esp/idf/esp-idf/components/newlib/platform_include/assert.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/stdlib.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cstdlib \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdbool.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stddef.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdint.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
+  ../components/espressif__esp-tflite-micro/tensorflow/lite/core/c/c_api_types.h \
+  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/utility \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/c++config.h \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/os_defines.h \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/cpu_defines.h \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/pstl/pstl_config.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/std_abs.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdint.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
-  ../main/detection_responder.h \
-  ../components/espressif__esp-tflite-micro/tensorflow/lite/c/common.h \
-  ../components/espressif__esp-tflite-micro/tensorflow/lite/core/c/common.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdbool.h \
-  ../components/espressif__esp-tflite-micro/tensorflow/lite/core/c/c_api_types.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/utility \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_relops.h \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_pair.h \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits \
@@ -143,93 +119,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/detection_responder.cc.obj: ../main/detec
   ../components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_log.h \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cstdarg \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cstddef \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_err.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_compiler.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
-  /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/gpio_types.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_bit_defs.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_etm.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa_config.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa_context.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/corebits.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xt_instr_macros.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_cpu.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa_api.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xt_utils.h \
-  /home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_attr.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_macros.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_assert.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/soc.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_assert.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/interrupts.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/reg_base.h \
-  /home/vicenterey/esp/idf/esp-idf/components/newlib/platform_include/esp_newlib.h \
-  /home/vicenterey/esp/idf/esp-idf/components/heap/include/esp_heap_caps.h \
-  /home/vicenterey/esp/idf/esp-idf/components/heap/include/multi_heap.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_rom/include/esp_rom_sys.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_system/include/esp_system.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_idf_version.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/limits.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/syslimits.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_timer/include/esp_timer.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h \
-  /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/reent.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/message_buffer.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
-  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
-  /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log.h \
-  /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log_internal.h \
-  /home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm.h \
-  /home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm_types_legacy.h \
-  /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/mcpwm_types.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/include/soc/mcpwm_periph.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
-  ../main/esp_main.h
+  ../main/esp_main.h \
+  config/sdkconfig.h
 
 esp-idf/main/CMakeFiles/__idf_main.dir/esp_cli.c.obj: ../main/esp_cli.c \
   /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
@@ -341,7 +232,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/esp_cli.c.obj: ../main/esp_cli.c \
   /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
   /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
   /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
-  ../main/main_functions.h \
   ../main/esp_main.h \
   ../main/esp_cli.h
 
@@ -1151,6 +1041,12 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj: ../main/main_funct
   /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log_internal.h \
   ../main/esp_main.h \
   /home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h \
+  /home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm.h \
+  /home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm_types_legacy.h \
+  /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/mcpwm_types.h \
+  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
+  /home/vicenterey/esp/idf/esp-idf/components/soc/include/soc/mcpwm_periph.h \
+  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
   /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
   /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/gpio_types.h \
   /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
@@ -1164,6 +1060,12 @@ esp-idf/main/CMakeFiles/__idf_main.dir/model_settings.cc.obj: ../main/model_sett
 esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/person_detect_model_data.cc \
   ../main/person_detect_model_data.h
 
+
+/home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/mcpwm_types.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm.h:
 
 ../components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/reduce.h:
 
@@ -1359,12 +1261,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/error_constants.h:
 
-../main/model_settings.cc:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/ext/aligned_buffer.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/uses_allocator_args.h:
-
 ../components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/transpose_conv.h:
 
 ../components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/dequantize.h:
@@ -1403,17 +1299,23 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 
 /home/vicenterey/esp/idf/esp-idf/components/esp_system/include/esp_system.h:
 
+/home/vicenterey/esp/idf/esp-idf/components/heap/include/esp_heap_caps.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/new_allocator.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/console/esp_console.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/max_size_type.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:
+
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/ext/numeric_traits.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_pair.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_bit_defs.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/array:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/atomic_wait.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_pthreadtypes.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/tr1/ell_integral.tcc:
 
@@ -1439,6 +1341,18 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 
 /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/ledc_types.h:
 
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/ranges_algo.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/heap/include/multi_heap.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa_api.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/array:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/atomic_wait.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_pthreadtypes.h:
+
 ../components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/conv.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/numbers:
@@ -1448,12 +1362,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 /home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_idf_version.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/ranges_base.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/tr1/legendre_function.tcc:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/clocale:
-
-../managed_components/espressif__esp32-camera/conversions/include/esp_jpg_decode.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/node_handle.h:
 
@@ -1465,7 +1373,9 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 
 /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log.h:
 
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cstdlib:
+/home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm_types_legacy.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/newlib/platform_include/time.h:
 
@@ -1478,10 +1388,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 ../components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/quantize.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/newlib/platform_include/sys/reent.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm_types_legacy.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timespec.h:
 
@@ -1503,19 +1409,23 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h:
 
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/sched.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sched.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/stdlib.h:
-
 ../main/esp_main.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h:
 
+/home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/gthr-default.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/utility.h:
+
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/unistd.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sched.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/sched.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/ctype_base.h:
 
@@ -1532,6 +1442,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h:
 
 ../main/detection_responder.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h:
 
@@ -1597,9 +1509,13 @@ config/sdkconfig.h:
 
 ../managed_components/espressif__esp32-camera/driver/include/sensor.h:
 
-/home/vicenterey/esp/idf/esp-idf/components/newlib/platform_include/errno.h:
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/algorithmfwd.h:
 
-/home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:
+../main/main_functions.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/move.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/newlib/platform_include/errno.h:
 
 ../components/espressif__esp-tflite-micro/third_party/flatbuffers/include/flatbuffers/buffer_ref.h:
 
@@ -1614,6 +1530,12 @@ config/sdkconfig.h:
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/alloc_traits.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h:
+
+../main/model_settings.cc:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/ext/aligned_buffer.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/uses_allocator_args.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h:
 
@@ -1667,6 +1589,14 @@ config/sdkconfig.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_intr_types.h:
 
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/compare:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/strings.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/errno.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:
+
 /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h:
@@ -1689,25 +1619,21 @@ config/sdkconfig.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/esp_rom/include/esp_rom_gpio.h:
 
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/algorithmfwd.h:
+../main/esp_cli.c:
 
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/move.h:
-
-../main/main_functions.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/errno.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/compare:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/strings.h:
+/home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timeval.h:
 
 ../managed_components/espressif__esp32-camera/driver/include/esp_camera.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/ext/atomicity.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/tr1/legendre_function.tcc:
+
+../managed_components/espressif__esp32-camera/conversions/include/esp_jpg_decode.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/clocale:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h:
 
@@ -1728,18 +1654,6 @@ config/sdkconfig.h:
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cctype:
 
 /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/xtensa/include/xtensa_api.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/ranges_algo.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/heap/include/multi_heap.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/gthr-default.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/utility.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_cpu.h:
 
@@ -1780,10 +1694,6 @@ config/sdkconfig.h:
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/exception:
 
 /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/reg_base.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/heap/include/esp_heap_caps.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/new_allocator.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/os_defines.h:
 
@@ -1831,45 +1741,23 @@ config/sdkconfig.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h:
 
-/home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm.h:
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h:
 
-/home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/mcpwm_types.h:
+../main/image_provider.cc:
 
-../components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/ostream:
 
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/memory_resource.h:
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cstdlib:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/stdlib.h:
+
+/home/vicenterey/esp/idf/esp-idf/components/soc/include/soc/mcpwm_periph.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cmath:
 
 /home/vicenterey/esp/idf/esp-idf/components/esp_rom/include/esp_rom_sys.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/std_abs.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/soc/include/soc/mcpwm_periph.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/locale_classes.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h:
-
-../main/esp_cli.c:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/console/esp_console.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/max_size_type.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h:
-
-../main/image_provider.cc:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/ostream:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/iostream:
 
@@ -1878,10 +1766,6 @@ config/sdkconfig.h:
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stringfwd.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/memoryfwd.h:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/system_error:
-
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/postypes.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/set:
 
@@ -1979,6 +1863,10 @@ config/sdkconfig.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/unistd.h:
 
+/home/vicenterey/esp/idf/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/locale_classes.h:
+
 ../components/espressif__esp-tflite-micro/third_party/gemmlowp/fixedpoint/fixedpoint.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32/psram/no-rtti/bits/c++allocator.h:
@@ -2040,3 +1928,11 @@ config/sdkconfig.h:
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/sys/_sigset.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/basic_string.tcc:
+
+../components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/memory_resource.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/postypes.h:
+
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/system_error:

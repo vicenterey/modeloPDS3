@@ -1,0 +1,22 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4010325b: tflite::MicroAllocator::AllocatePersistentBuffer(unsigned int) at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:534
+[0m
+[0;33m0x40102f5c: tflite::MicroMutableOpResolver<7u>::FindOp(tflite::BuiltinOperator) const at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:58
+ (inlined by) tflite::MicroMutableOpResolver<7u>::FindOp(tflite::BuiltinOperator) const at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:53
+0x40102f72: tflite::MicroMutableOpResolver<7u>::FindOp(tflite::BuiltinOperator) const at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:54 (discriminator 1)
+[0m
+[0;33m0x40103258: tflite::MicroAllocator::AllocatePersistentBuffer(unsigned int) at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:534
+0x400daa29: tflite::MicroInterpreterContext::AllocatePersistentBuffer(unsigned int) at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:36
+0x40102f89: tflite::MicroContextAllocatePersistentBuffer(TfLiteContext*, unsigned int) at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.h:113 (discriminator 1)
+0x400e081f: tflite::(anonymous namespace)::InitQuantizeReference(TfLiteContext*, char const*, unsigned int) at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/quantize.cc:36
+0x400dab47: tflite::MicroInterpreterGraph::InitSubgraphs() at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:79
+0x400da712: tflite::MicroInterpreter::AllocateTensors() at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:215
+0x400d9fd7: setup at /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:106
+0x400d9a37: tf_main() at /home/vicenterey/esp/projects_tf/model/person_detection/main/main.cc:29
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

@@ -1,0 +1,4 @@
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/image_provider.cc:23:
+/home/vicenterey/esp/idf/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~

@@ -83,12 +83,19 @@ int app_camera_init() {
     return -1;
   }
   sensor_t *s = esp_camera_sensor_get();
-  s->set_vflip(s, 1); //flip it back
+  printf("Modificando los sensores...\n");
+  // s->set_vflip(s, 1); //flip it back
   //initial sensors are flipped vertically and colors are a bit saturated
-  if (s->id.PID == OV3660_PID)
+  printf("PID: 0x%x\n", s->id.PID);
+  if (s->id.PID == OV2640_PID)
   {
-      s->set_brightness(s, 1);  //up the blightness just a bit
-      s->set_saturation(s, -2); //lower the saturation
+    // s->set_brightness(s, -2);        // Reducir brillo
+    // s->set_contrast(s, -2);          // Reducir contraste
+    // s->set_exposure_ctrl(s, 0);      // Desactivar exposición automática
+    // s->set_aec_value(s, 10);        // Reducir exposición manualmente
+    // s->set_gain_ctrl(s, 0);           // Desactivar ganancia automática
+    // s->set_gainceiling(s, GAINCEILING_2X);  // Limitar ganancia
+
   }
   return 0;
 #else // ESP_CAMERA_SUPPORTED

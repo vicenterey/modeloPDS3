@@ -7,8 +7,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/vicenterey/.git/HEAD"
-  "/home/vicenterey/.git/refs/heads/main"
   "/home/vicenterey/esp/idf/esp-idf/.git/HEAD"
   "/home/vicenterey/esp/idf/esp-idf/.git/modules/components/bootloader/subproject/components/micro-ecc/micro-ecc/HEAD"
   "/home/vicenterey/esp/idf/esp-idf/.git/modules/components/bt/controller/lib_esp32/HEAD"
@@ -199,6 +197,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/vicenterey/esp/idf/esp-idf/tools/cmake/version.cmake"
   "/home/vicenterey/esp/idf/esp-idf/tools/kconfig_new/confgen.py"
   "/home/vicenterey/esp/idf/esp-idf/tools/kconfig_new/config.env.in"
+  "../.git/HEAD"
+  "../.git/refs/heads/main"
   "../CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"

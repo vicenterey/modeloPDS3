@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "person_detection",
-    "project_version":    "e972355-dirty",
+    "project_version":    "8d2c7d5-dirty",
     "project_path":       "/home/vicenterey/esp/projects_tf/model/person_detection",
     "idf_path":           "/home/vicenterey/esp/idf/esp-idf",
     "build_dir":          "/home/vicenterey/esp/projects_tf/model/person_detection/build",

@@ -111,25 +111,16 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, float* im
     }
   }
 #else // DISPLAY_SUPPORT
-  MicroPrintf("Image Captured\n");
   // We have initialised camera to grayscale
   // Just quantize to int8_t
+  printf("\n");
   for (int i = 0; i < image_width * image_height; i++) {
     // Convert the uint8_t pixel to float32
     float pixel = static_cast<float>(((uint8_t *) fb->buf)[i]);
     // Normalize the pixel data to 0-1 range if your model expects this range
     image_data[i] = pixel / 255.0f;
   }
-  // for (int i = 0; i < image_width * image_height; i++) {
-  //   // Convert the uint8_t pixel to float32
-  //   float pixel = static_cast<float>(((uint8_t *) fb->buf)[i]);
-  //   // Normalize the pixel data to 0-1 range if your model expects this range
-  //   image_data[i] = pixel / 255.0f;
-
-  //   // Print the pixel value to the terminal
-  //   printf("%f, ", image_data[i]);
-  // }
-  // printf("\n");
+  //printf("\n");
 #endif // DISPLAY_SUPPORT
 
   esp_camera_fb_return(fb);

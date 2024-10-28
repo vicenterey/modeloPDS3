@@ -15,8 +15,10 @@
 #include "sdkconfig.h"
 
 // Enable this to do inference on embedded images
+// #define CLI_ONLY_INFERENCE 1
 
 // Enable this to get cpu stats
+#define COLLECT_CPU_STATS 1
 
 #if !defined(CLI_ONLY_INFERENCE)
 // Enable display support if BSP is enabled in menuconfig

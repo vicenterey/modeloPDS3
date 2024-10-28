@@ -30,6 +30,7 @@ void setup();
 // compatibility.
 void loop();
 void init_gpio();
+void setup_pwn();
 void run_inference(void *ptr);
 
 #ifdef __cplusplus

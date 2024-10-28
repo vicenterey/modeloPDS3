@@ -109,6 +109,5 @@ esp-idf/main/CMakeFiles/__idf_main.dir/esp_cli.c.obj: \
  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
  /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
- /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.h \
  /home/vicenterey/esp/projects_tf/model/person_detection/main/esp_main.h \
  /home/vicenterey/esp/projects_tf/model/person_detection/main/esp_cli.h
