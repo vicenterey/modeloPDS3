@@ -15,7 +15,6 @@
 #include "esp_main.h"
 #include "esp_psram.h"
 
-// Resto del código...
 #define INF_POWER 0.13
 
 namespace {
@@ -70,7 +69,7 @@ void setup() {
 
   // Define MicroMutableOpResolver and add required operations
   static tflite::MicroMutableOpResolver<7> micro_op_resolver;
-  micro_op_resolver.AddQuantize();
+  micro_op_resolver.AddQuantize(); 
   micro_op_resolver.AddConv2D();
   micro_op_resolver.AddMaxPool2D();
   micro_op_resolver.AddReshape();
@@ -101,10 +100,15 @@ void setup() {
 
 #ifndef CLI_ONLY_INFERENCE
 void loop() {
-  MicroPrintf("Image capture failed.");
+
   if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.f)) {
     MicroPrintf("Image capture failed.");
   }
+
+  // for (int i = 0; i < kNumCols * kNumRows; i++) {
+  //   printf("%f, ", input->data.f[i]);
+  // }
+  // printf("\n");
 
   if (kTfLiteOk != interpreter->Invoke()) {
     MicroPrintf("Invoke failed.");
@@ -119,6 +123,8 @@ void loop() {
   for (int i = 0; i < kCategoryCount; ++i) {
     sign_scores[i] = output->data.f[i];
   }
+  RespondToDetection(sign_scores, kCategoryLabels);
+  vTaskDelay(7000 / portTICK_RATE_MS);
 }
 #endif
 

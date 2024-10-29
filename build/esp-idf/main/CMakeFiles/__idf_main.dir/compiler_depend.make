@@ -1040,19 +1040,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj: ../main/main_funct
   /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log.h \
   /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log_internal.h \
   ../main/esp_main.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h \
-  /home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm.h \
-  /home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm_types_legacy.h \
-  /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/mcpwm_types.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/include/soc/mcpwm_periph.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
-  /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/gpio_types.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
-  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h
+  /home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h
 
 esp-idf/main/CMakeFiles/__idf_main.dir/model_settings.cc.obj: ../main/model_settings.cc \
   ../main/model_settings.h
@@ -1060,12 +1048,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/model_settings.cc.obj: ../main/model_sett
 esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/person_detect_model_data.cc \
   ../main/person_detect_model_data.h
 
-
-/home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/mcpwm_types.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm.h:
 
 ../components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/reduce.h:
 
@@ -1372,8 +1354,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj: ../main/
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/machine/time.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm_types_legacy.h:
 
 /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:
 
@@ -1750,8 +1730,6 @@ config/sdkconfig.h:
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cstdlib:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/stdlib.h:
-
-/home/vicenterey/esp/idf/esp-idf/components/soc/include/soc/mcpwm_periph.h:
 
 /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/cmath:
 

@@ -123,7 +123,7 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, float* im
   //printf("\n");
 #endif // DISPLAY_SUPPORT
 
-  esp_camera_fb_return(fb);
+  esp_camera_return_all();
   /* here the esp camera can give you grayscale image directly */
   return kTfLiteOk;
 #else

@@ -408,16 +408,4 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj: \
  /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log.h \
  /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log_internal.h \
  /home/vicenterey/esp/projects_tf/model/person_detection/main/esp_main.h \
- /home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h \
- /home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm.h \
- /home/vicenterey/esp/idf/esp-idf/components/driver/deprecated/driver/mcpwm_types_legacy.h \
- /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/mcpwm_types.h \
- /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
- /home/vicenterey/esp/idf/esp-idf/components/soc/include/soc/mcpwm_periph.h \
- /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
- /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
- /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/gpio_types.h \
- /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
- /home/vicenterey/esp/idf/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
- /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h
+ /home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h

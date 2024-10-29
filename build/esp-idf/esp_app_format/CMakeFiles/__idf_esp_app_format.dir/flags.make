@@ -8,5 +8,5 @@ C_INCLUDES = -I/home/vicenterey/esp/projects_tf/model/person_detection/build/con
 
 C_FLAGS = -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -mfix-esp32-psram-cache-issue -mfix-esp32-psram-cache-strategy=memw -O2 -fmacro-prefix-map=/home/vicenterey/esp/projects_tf/model/person_detection=. -fmacro-prefix-map=/home/vicenterey/esp/idf/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration
 
-# Custom defines: esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj_DEFINES = PROJECT_VER="8d2c7d5-dirty"; PROJECT_NAME="person_detection"
+# Custom defines: esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj_DEFINES = PROJECT_VER="c34ab97-dirty"; PROJECT_NAME="person_detection"
 
