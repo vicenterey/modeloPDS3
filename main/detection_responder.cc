@@ -23,6 +23,57 @@ limitations under the License.
 #include "tensorflow/lite/micro/micro_log.h"
 
 #include "esp_main.h"
+
+extern "C" {
+  #include <stdio.h>
+  #include "freertos/FreeRTOS.h"
+  #include "freertos/task.h"
+  #include "driver/gpio.h"
+  #include "driver/ledc.h"
+}
+
+#define SERVO_PINX GPIO_NUM_13     // Pin de señal del servo
+#define LEDC_CHANNEL LEDC_CHANNEL_0
+#define LEDC_TIMER LEDC_TIMER_0
+#define LEDC_FREQ 50              // Frecuencia PWM en Hz (50Hz para servos)
+
+#define LED_PIN GPIO_NUM_2
+#define BUTTON_PIN GPIO_NUM_15
+
+#define SERVO_MIN_PULSEWIDTH 1600
+#define SERVO_MAX_PULSEWIDTH 8000
+#define SERVO_MAX_DEGREE     180
+
+void setup_pwm(uint8_t SERVO_PIN) {
+  ledc_timer_config_t ledc_timer = {
+    .speed_mode       = LEDC_LOW_SPEED_MODE,
+    .duty_resolution  = LEDC_TIMER_16_BIT,
+    .timer_num        = LEDC_TIMER,
+    .freq_hz          = LEDC_FREQ,
+    .clk_cfg          = LEDC_AUTO_CLK
+};
+  ledc_timer_config(&ledc_timer);
+  
+  ledc_channel_config_t ledc_channel = {
+    .gpio_num       = SERVO_PIN,
+    .speed_mode     = LEDC_LOW_SPEED_MODE,
+    .channel        = LEDC_CHANNEL,
+    .intr_type      = LEDC_INTR_DISABLE,
+    .timer_sel      = LEDC_TIMER,
+    .duty           = 0,
+    .hpoint         = 0,
+    .flags          = 0
+  };
+  ledc_channel_config(&ledc_channel);
+}
+
+void set_servo_angle(int angle) {
+  int duty = SERVO_MIN_PULSEWIDTH + ((SERVO_MAX_PULSEWIDTH - SERVO_MIN_PULSEWIDTH) * angle) / SERVO_MAX_DEGREE;
+  ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL, duty);
+  ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL);
+}
+
+
 #if DISPLAY_SUPPORT
 #include "image_provider.h"
 #include "bsp/esp-bsp.h"
@@ -60,6 +111,10 @@ static void create_gui(void)
 #endif // DISPLAY_SUPPORT
 
 void RespondToDetection(float* sign_score, const char* kCategoryLabels[]) {
+
+  gpio_set_direction(GPIO_NUM_4, GPIO_MODE_OUTPUT);
+  gpio_set_level(GPIO_NUM_4, 0);
+
   float max_score = 0;
   int max_score_index = 0;
   for (int i = 0; i < 6; ++i) {
@@ -71,8 +126,24 @@ void RespondToDetection(float* sign_score, const char* kCategoryLabels[]) {
 
   // Log the detected sign.
   if (max_score > 0.5) {
+    gpio_set_level(GPIO_NUM_4, 1);
+
+    setup_pwm(SERVO_PINX);
+    set_servo_angle(0);
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    set_servo_angle(180);
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+
     MicroPrintf("Detected sign: %s", kCategoryLabels[max_score_index]);
   } else {
+    gpio_set_level(GPIO_NUM_4, 0);
+
+    setup_pwm(SERVO_PINX);
+    set_servo_angle(0);
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    set_servo_angle(180);
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+
     MicroPrintf("No sign detected");
   }
   MicroPrintf("C: %f, L: %f, Puno: %f, Cruzados: %f, Rock: %f, Palma: %f", sign_score[0], sign_score[1], sign_score[2], sign_score[3], sign_score[4], sign_score[5]);
