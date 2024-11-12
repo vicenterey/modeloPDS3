@@ -1,0 +1,29 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400efe73: task_wdt_timeout_handling at /home/vicenterey/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/vicenterey/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x400844f9: _xt_lowint1 at /home/vicenterey/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d56a9: uart_tx_char at /home/vicenterey/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:167
+0x400d62aa: uart_write at /home/vicenterey/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/vicenterey/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d7306: esp_vfs_write at /home/vicenterey/esp/idf/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d6f25: console_write at /home/vicenterey/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:67
+0x400d7306: esp_vfs_write at /home/vicenterey/esp/idf/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x40086df9: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x400861b1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x40086212: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-070bbf2f/newlib/libc/include/stdio.h:417
+0x400866f6: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f79c7: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f7345: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f9bff: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8a40: GetImage(int, int, int, float*) at /home/vicenterey/esp/projects_tf/model/person_detection/main/image_provider.cc:122
+0x400d8872: loop at /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:104
+0x400d82d6: tf_main() at /home/vicenterey/esp/projects_tf/model/person_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0m

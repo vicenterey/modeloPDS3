@@ -1,65 +1,66 @@
-/* Copyright 2019 The TensorFlow Authors. All Rights Reserved.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-==============================================================================*/
-
-/*
- * SPDX-FileCopyrightText: 2019-2023 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: Apache-2.0
- */
-
 #include "detection_responder.h"
 #include "tensorflow/lite/micro/micro_log.h"
-
+#include <cstdio>
+#include <cstring>  // Incluir cstring para strlen
 #include "esp_main.h"
-#if DISPLAY_SUPPORT
 #include "image_provider.h"
-#include "bsp/esp-bsp.h"
-
-
-// Camera definition is always initialized to match the trained detection model: 96x96 pix
-// That is too small for LCD displays, so we extrapolate the image to 192x192 pix
-#define IMG_WD (96 * 2)
-#define IMG_HT (96 * 2)
-
-static lv_obj_t *camera_canvas = NULL;
-static lv_obj_t *person_indicator = NULL;
-static lv_obj_t *label = NULL;
-
-static void create_gui(void)
-{
-  bsp_display_start();
-  bsp_display_backlight_on(); // Set display brightness to 100%
-  bsp_display_lock(0);
-  camera_canvas = lv_canvas_create(lv_scr_act());
-  assert(camera_canvas);
-  lv_obj_align(camera_canvas, LV_ALIGN_TOP_MID, 0, 0);
-
-  person_indicator = lv_led_create(lv_scr_act());
-  assert(person_indicator);
-  lv_obj_align(person_indicator, LV_ALIGN_BOTTOM_MID, -70, 0);
-  lv_led_set_color(person_indicator, lv_palette_main(LV_PALETTE_GREEN));
-
-  label = lv_label_create(lv_scr_act());
-  assert(label);
-  lv_label_set_text_static(label, "Person detected");
-  lv_obj_align_to(label, person_indicator, LV_ALIGN_OUT_RIGHT_MID, 20, 0);
-  bsp_display_unlock();
+extern "C" {
+  #include "freertos/FreeRTOS.h"
+  #include "freertos/task.h"
+  #include "esp_system.h"
+  #include "esp_log.h"
+  #include "driver/uart.h"
+  #include "string.h"
+  #include "driver/gpio.h"
 }
-#endif // DISPLAY_SUPPORT
 
-void RespondToDetection(float* sign_score, const char* kCategoryLabels[]) {
+#define UART_NUM UART_NUM_1
+#define TXD_PIN (GPIO_NUM_14)
+#define RXD_PIN (GPIO_NUM_15)
+#define FLASH_PIN (GPIO_NUM_4)
+#define UART_BAUD_RATE 115200
+static const int RX_BUF_SIZE = 1024;
+
+void uart_init(void)
+{
+  const uart_config_t uart_config = {
+    .baud_rate = UART_BAUD_RATE,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+  };
+  uart_driver_install(UART_NUM, RX_BUF_SIZE * 2, 0, 0, NULL, 0);
+  uart_param_config(UART_NUM, &uart_config);
+  uart_set_pin(UART_NUM, TXD_PIN, RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+
+  // Configurar el pin del flash como salida
+  esp_rom_gpio_pad_select_gpio(FLASH_PIN);
+  gpio_set_direction(FLASH_PIN, GPIO_MODE_OUTPUT);
+}
+
+void uart_send_string(const char* str)
+{
+  const int len = strlen(str);
+  const int txBytes = uart_write_bytes(UART_NUM, str, len);
+  ESP_LOGI("UART", "Wrote %d bytes", txBytes);
+}
+
+void uart_receive_string(char* buffer, int max_len) {
+  int rxBytes = uart_read_bytes(UART_NUM, buffer, max_len - 1, portMAX_DELAY);
+  if (rxBytes > 0) {
+    buffer[rxBytes] = '\0';  // Null-terminate the received string
+    ESP_LOGI("UART", "Received %d bytes: '%s'", rxBytes, buffer);
+  }
+}
+
+int RespondToDetection(float* sign_score, const char* kCategoryLabels[]) {
+  // Encender el flash durante un milisegundo
+  gpio_set_level(FLASH_PIN, 1);
+  vTaskDelay(100 / portTICK_PERIOD_MS);
+  gpio_set_level(FLASH_PIN, 0);
+
   float max_score = 0;
   int max_score_index = 0;
   for (int i = 0; i < 6; ++i) {
@@ -69,11 +70,12 @@ void RespondToDetection(float* sign_score, const char* kCategoryLabels[]) {
     }
   }
 
-  // Log the detected sign.
   if (max_score > 0.5) {
     MicroPrintf("Detected sign: %s", kCategoryLabels[max_score_index]);
   } else {
     MicroPrintf("No sign detected");
   }
   MicroPrintf("C: %f, L: %f, Puno: %f, Cruzados: %f, Rock: %f, Palma: %f", sign_score[0], sign_score[1], sign_score[2], sign_score[3], sign_score[4], sign_score[5]);
+
+  return max_score_index;
 }

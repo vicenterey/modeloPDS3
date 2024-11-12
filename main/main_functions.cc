@@ -96,35 +96,45 @@ void setup() {
     return;
   }
 #endif
+uart_init();
 }
 
 #ifndef CLI_ONLY_INFERENCE
 void loop() {
+  char rx_buffer[128];
 
-  if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.f)) {
-    MicroPrintf("Image capture failed.");
+  while (true) {
+    // Esperar a recibir un mensaje UART
+    uart_receive_string(rx_buffer, sizeof(rx_buffer));
+
+    // Realizar la inferencia de las cuatro fotos
+    int max_score_indices[4];
+    for (int i = 0; i < 4; ++i) {
+      if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.f)) {
+        MicroPrintf("Image capture failed.");
+      }
+
+      if (kTfLiteOk != interpreter->Invoke()) {
+        MicroPrintf("Invoke failed.");
+      }
+
+      TfLiteTensor* output = interpreter->output(0);
+
+      float sign_scores[kCategoryCount];
+      for (int j = 0; j < kCategoryCount; ++j) {
+        sign_scores[j] = output->data.f[j];
+      }
+
+      max_score_indices[i] = RespondToDetection(sign_scores, kCategoryLabels);
+      vTaskDelay(5000 / portTICK_RATE_MS);
+    }
+
+    // Enviar el string con las 4 inferencias
+    char message[50];
+    snprintf(message, sizeof(message), "Max score indices: %d, %d, %d, %d\n", max_score_indices[0], max_score_indices[1], max_score_indices[2], max_score_indices[3]);
+    MicroPrintf(message);
+    uart_send_string(message);
   }
-
-  // for (int i = 0; i < kNumCols * kNumRows; i++) {
-  //   printf("%f, ", input->data.f[i]);
-  // }
-  // printf("\n");
-
-  if (kTfLiteOk != interpreter->Invoke()) {
-    MicroPrintf("Invoke failed.");
-  }
-
-  TfLiteTensor* output = interpreter->output(0);
-
-  printf("Input type: %s\n", TfLiteTypeGetName(input->type));
-  printf("Output type: %s\n", TfLiteTypeGetName(output->type));
-
-  float sign_scores[kCategoryCount];
-  for (int i = 0; i < kCategoryCount; ++i) {
-    sign_scores[i] = output->data.f[i];
-  }
-  RespondToDetection(sign_scores, kCategoryLabels);
-  vTaskDelay(7000 / portTICK_RATE_MS);
 }
 #endif
 

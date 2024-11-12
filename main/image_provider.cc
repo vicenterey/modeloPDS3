@@ -119,6 +119,7 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, float* im
     float pixel = static_cast<float>(((uint8_t *) fb->buf)[i]);
     // Normalize the pixel data to 0-1 range if your model expects this range
     image_data[i] = pixel / 255.0f;
+    // printf("%f, ", image_data[i]);
   }
   //printf("\n");
 #endif // DISPLAY_SUPPORT

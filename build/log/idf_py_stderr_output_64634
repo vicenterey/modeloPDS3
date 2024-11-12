@@ -1,0 +1,8 @@
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:9:12: fatal error: bsp/esp-bsp.h: No such file or directory
+    9 |   #include "bsp/esp-bsp.h"
+      |            ^~~~~~~~~~~~~~~
+compilation terminated.
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/detection_responder.cc.obj] Error 1
+make[2]: *** [CMakeFiles/Makefile2:5675: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2437: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:299: flash] Error 2
