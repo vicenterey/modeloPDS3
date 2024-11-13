@@ -1,0 +1,42 @@
+CMake Error at /home/vicenterey/esp/idf/esp-idf/tools/cmake/component.cmake:225 (message):
+  CMake Warning (dev) at build_properties.temp.cmake:8:
+
+    Syntax Warning in cmake code at column 106
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    /home/vicenterey/esp/idf/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:3 (include)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Error at
+  /usr/share/cmake-3.22/Modules/ExternalProject.cmake:1218 (define_property):
+
+    define_property command is not scriptable
+
+  Call Stack (most recent call first):
+
+    /home/vicenterey/esp/idf/esp-idf/tools/cmake/kconfig.cmake:1 (include)
+    /home/vicenterey/esp/idf/esp-idf/tools/cmake/idf.cmake:43 (include)
+    /home/vicenterey/esp/idf/esp-idf/tools/cmake/project.cmake:29 (include)
+    /home/vicenterey/esp/projects_tf/model/person_detection/main/CMakeLists.txt:3 (include)
+    /home/vicenterey/esp/idf/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    /home/vicenterey/esp/idf/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:127 (__component_get_requirements)
+
+  
+
+  
+
+Call Stack (most recent call first):
+  /home/vicenterey/esp/idf/esp-idf/tools/cmake/build.cmake:586 (__component_get_requirements)
+  /home/vicenterey/esp/idf/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:29 (project)
+
+
+make: *** [Makefile:2090: cmake_check_build_system] Error 1

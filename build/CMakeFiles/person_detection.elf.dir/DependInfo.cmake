@@ -96,6 +96,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/DependInfo.cmake"
   "/home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/DependInfo.cmake"
   "/home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/static_images/CMakeFiles/__idf_static_images.dir/DependInfo.cmake"
+  "/home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp-now/CMakeFiles/__idf_espressif__esp-now.dir/DependInfo.cmake"
   "/home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp-nn/CMakeFiles/__idf_espressif__esp-nn.dir/DependInfo.cmake"
   "/home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp-tflite-micro/CMakeFiles/__idf_espressif__esp-tflite-micro.dir/DependInfo.cmake"
   "/home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/DependInfo.cmake"

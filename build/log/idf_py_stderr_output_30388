@@ -1,0 +1,10 @@
+CMake Error at /home/vicenterey/esp/idf/esp-idf/tools/cmake/build.cmake:268 (message):
+  Failed to resolve component 'esp_now'.
+Call Stack (most recent call first):
+  /home/vicenterey/esp/idf/esp-idf/tools/cmake/build.cmake:310 (__build_resolve_and_add_req)
+  /home/vicenterey/esp/idf/esp-idf/tools/cmake/build.cmake:607 (__build_expand_requirements)
+  /home/vicenterey/esp/idf/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:29 (project)
+
+
+make: *** [Makefile:2076: cmake_check_build_system] Error 1

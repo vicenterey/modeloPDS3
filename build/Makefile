@@ -1839,6 +1839,19 @@ __idf_static_images/fast:
 .PHONY : __idf_static_images/fast
 
 #=============================================================================
+# Target rules for targets named __idf_espressif__esp-now
+
+# Build rule for target.
+__idf_espressif__esp-now: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_espressif__esp-now
+.PHONY : __idf_espressif__esp-now
+
+# fast build rule for target.
+__idf_espressif__esp-now/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp-now/CMakeFiles/__idf_espressif__esp-now.dir/build.make esp-idf/espressif__esp-now/CMakeFiles/__idf_espressif__esp-now.dir/build
+.PHONY : __idf_espressif__esp-now/fast
+
+#=============================================================================
 # Target rules for targets named __idf_espressif__esp-nn
 
 # Build rule for target.
@@ -2021,6 +2034,7 @@ help:
 	@echo "... __idf_esp_wifi"
 	@echo "... __idf_espcoredump"
 	@echo "... __idf_espressif__esp-nn"
+	@echo "... __idf_espressif__esp-now"
 	@echo "... __idf_espressif__esp-tflite-micro"
 	@echo "... __idf_espressif__esp32-camera"
 	@echo "... __idf_fatfs"

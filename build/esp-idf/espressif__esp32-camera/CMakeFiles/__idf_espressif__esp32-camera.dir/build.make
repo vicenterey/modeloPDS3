@@ -167,24 +167,10 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/dri
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_espressif__esp32-camera.dir/driver/cam_hal.c.s"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/cam_hal.c -o CMakeFiles/__idf_espressif__esp32-camera.dir/driver/cam_hal.c.s
 
-esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
-esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj: ../managed_components/espressif__esp32-camera/driver/sccb.c
-esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj"
-	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/sccb.c
-
-esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.i"
-	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/sccb.c > CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.i
-
-esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.s"
-	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/sccb.c -o CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.s
-
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj: ../managed_components/espressif__esp32-camera/driver/sensor.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/sensor.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.i: cmake_force
@@ -198,7 +184,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/dri
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj: ../managed_components/espressif__esp32-camera/sensors/ov2640.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/ov2640.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.i: cmake_force
@@ -212,7 +198,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj: ../managed_components/espressif__esp32-camera/sensors/ov3660.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/ov3660.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.i: cmake_force
@@ -226,7 +212,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj: ../managed_components/espressif__esp32-camera/sensors/ov5640.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/ov5640.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.i: cmake_force
@@ -240,7 +226,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj: ../managed_components/espressif__esp32-camera/sensors/ov7725.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/ov7725.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.i: cmake_force
@@ -254,7 +240,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj: ../managed_components/espressif__esp32-camera/sensors/ov7670.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/ov7670.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.i: cmake_force
@@ -268,7 +254,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj: ../managed_components/espressif__esp32-camera/sensors/nt99141.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/nt99141.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.i: cmake_force
@@ -282,7 +268,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj: ../managed_components/espressif__esp32-camera/sensors/gc0308.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/gc0308.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.i: cmake_force
@@ -296,7 +282,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj: ../managed_components/espressif__esp32-camera/sensors/gc2145.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/gc2145.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.i: cmake_force
@@ -310,7 +296,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj: ../managed_components/espressif__esp32-camera/sensors/gc032a.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/gc032a.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.i: cmake_force
@@ -324,7 +310,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj: ../managed_components/espressif__esp32-camera/sensors/bf3005.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/bf3005.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.i: cmake_force
@@ -338,7 +324,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj: ../managed_components/espressif__esp32-camera/sensors/bf20a6.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/bf20a6.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.i: cmake_force
@@ -352,7 +338,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj: ../managed_components/espressif__esp32-camera/sensors/sc101iot.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/sc101iot.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.i: cmake_force
@@ -366,7 +352,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj: ../managed_components/espressif__esp32-camera/sensors/sc030iot.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/sc030iot.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.i: cmake_force
@@ -380,7 +366,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj: ../managed_components/espressif__esp32-camera/sensors/sc031gs.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/sensors/sc031gs.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.i: cmake_force
@@ -394,7 +380,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj: ../managed_components/espressif__esp32-camera/target/xclk.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/target/xclk.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.i: cmake_force
@@ -408,7 +394,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/tar
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj: ../managed_components/espressif__esp32-camera/target/esp32/ll_cam.c
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/target/esp32/ll_cam.c
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.i: cmake_force
@@ -419,6 +405,20 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/tar
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.s"
 	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/target/esp32/ll_cam.c -o CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.s
 
+esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/flags.make
+esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj: ../managed_components/espressif__esp32-camera/driver/sccb.c
+esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj"
+	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj -MF CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj.d -o CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj -c /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/sccb.c
+
+esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.i"
+	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/sccb.c > CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.i
+
+esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.s"
+	cd /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera && /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/sccb.c -o CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.s
+
 # Object files for target __idf_espressif__esp32-camera
 __idf_espressif__esp32__camera_OBJECTS = \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/yuv.c.obj" \
@@ -428,7 +428,6 @@ __idf_espressif__esp32__camera_OBJECTS = \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/esp_jpg_decode.c.obj" \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/driver/esp_camera.c.obj" \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/driver/cam_hal.c.obj" \
-"CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj" \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj" \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj" \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj" \
@@ -445,7 +444,8 @@ __idf_espressif__esp32__camera_OBJECTS = \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj" \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj" \
 "CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj" \
-"CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj"
+"CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj" \
+"CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj"
 
 # External object files for target __idf_espressif__esp32-camera
 __idf_espressif__esp32__camera_EXTERNAL_OBJECTS =
@@ -457,7 +457,6 @@ esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif_
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/esp_jpg_decode.c.obj
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/esp_camera.c.obj
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/cam_hal.c.obj
-esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj
@@ -475,6 +474,7 @@ esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif_
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj
+esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb.c.obj
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make
 esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking C static library libespressif__esp32-camera.a"

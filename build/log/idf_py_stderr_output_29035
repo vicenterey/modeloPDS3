@@ -1,0 +1,14 @@
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:12:12: fatal error: esp_now.h: No such file or directory
+   12 |   #include "esp_now.h"
+      |            ^~~~~~~~~~~
+compilation terminated.
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/detection_responder.cc.obj] Error 1
+make[3]: *** Waiting for unfinished jobs....
+/home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:18:10: fatal error: esp_now.h: No such file or directory
+   18 | #include "esp_now.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:118: esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj] Error 1
+make[2]: *** [CMakeFiles/Makefile2:5675: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2437: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:299: flash] Error 2

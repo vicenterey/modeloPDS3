@@ -1,0 +1,18 @@
+-- Building ESP-IDF components for target esp32
+NOTICE: Skipping optional dependency: espressif/esp32_s2_kaluga_kit
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: Skipping optional dependency: espressif/esp32_s3_korvo_2
+Manifest files have changed, solving dependencies.
+Using component placed at /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro for dependency espressif/esp-tflite-micro(*), specified in /home/vicenterey/esp/projects_tf/model/person_detection/main/idf_component.yml
+..........Updating lock file at /home/vicenterey/esp/projects_tf/model/person_detection/dependencies.lock
+Processing 5 dependencies:
+[1/5] espressif/cmake_utilities (0.5.3)
+[2/5] espressif/esp-nn (1.1.0)
+[3/5] espressif/esp-now (2.5.2)
+[4/5] espressif/esp32-camera (2.0.13)
+[5/5] idf (5.3.0)
+NOTICE: Skipping optional dependency: espressif/esp32_s2_kaluga_kit
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: Skipping optional dependency: espressif/esp32_s3_korvo_2
+-- Configuring incomplete, errors occurred!
+See also "/home/vicenterey/esp/projects_tf/model/person_detection/build/CMakeFiles/CMakeOutput.log".

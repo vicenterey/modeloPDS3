@@ -202,6 +202,7 @@ esp-idf/esp_system/ld/sections.ld: esp-idf/perfmon/libperfmon.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/spiffs/libspiffs.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/static_images/libstatic_images.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__esp-now/libespressif__esp-now.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__esp-nn/libespressif__esp-nn.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__esp-tflite-micro/libespressif__esp-tflite-micro.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a

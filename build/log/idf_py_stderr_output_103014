@@ -1,0 +1,11 @@
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(main_functions.cc.obj):(.literal.setup+0x8c): undefined reference to `_Z10InitCamerav'
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(main_functions.cc.obj):(.literal.loop+0x10): undefined reference to `_Z8GetImageiiiPf'
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(main_functions.cc.obj): in function `_ZN6tflite22MicroMutableOpResolverILj7EE10AddBuiltinENS_15BuiltinOperatorERK16TFLMRegistrationPF12TfLiteStatusPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPvE':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:677:(.text.setup+0x4d5): undefined reference to `_Z10InitCamerav'
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(main_functions.cc.obj): in function `loop':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:86:(.text.loop+0x53): undefined reference to `_Z8GetImageiiiPf'
+collect2: error: ld returned 1 exit status
+make[3]: *** [CMakeFiles/person_detection.elf.dir/build.make:590: person_detection.elf] Error 1
+make[2]: *** [CMakeFiles/Makefile2:2572: CMakeFiles/person_detection.elf.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2473: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:299: flash] Error 2

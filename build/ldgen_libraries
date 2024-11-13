@@ -81,6 +81,7 @@
 /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/spiffs/libspiffs.a
 /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/static_images/libstatic_images.a
+/home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp-now/libespressif__esp-now.a
 /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp-nn/libespressif__esp-nn.a
 /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp-tflite-micro/libespressif__esp-tflite-micro.a
 /home/vicenterey/esp/projects_tf/model/person_detection/build/esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a

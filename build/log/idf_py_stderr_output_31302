@@ -1,0 +1,304 @@
+/home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp-now/src/utils/src/espnow_mem.c: In function 'espnow_mem_print_task':
+/home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp-now/src/utils/src/espnow_mem.c:170:2: warning: #warning configTASKLIST_INCLUDE_COREID must also be set to 1 in FreeRTOSConfig.h to use xCoreID. [-Wcpp]
+  170 | #warning configTASKLIST_INCLUDE_COREID must also be set to 1 in FreeRTOSConfig.h to use xCoreID.
+      |  ^~~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/mul.cc:21:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:150:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  150 |       [](const ArithmeticParams& params, const uint8_t input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:126:56: note: shadowed declaration is here
+  126 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:249:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  249 |       [](const ArithmeticParams& params, const std::complex<float> input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:221:56: note: shadowed declaration is here
+  221 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/mul_common.cc:19:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:150:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  150 |       [](const ArithmeticParams& params, const uint8_t input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:126:56: note: shadowed declaration is here
+  126 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:249:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  249 |       [](const ArithmeticParams& params, const std::complex<float> input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:221:56: note: shadowed declaration is here
+  221 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/lstm_eval.cc:25:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:150:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  150 |       [](const ArithmeticParams& params, const uint8_t input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:126:56: note: shadowed declaration is here
+  126 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:249:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  249 |       [](const ArithmeticParams& params, const std::complex<float> input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:221:56: note: shadowed declaration is here
+  221 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In instantiation of 'typename std::enable_if<((! tflite::is_small_integer<T>::value) || enable_for_short_integers), void>::type tflite::reference_ops::BroadcastMul6DSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = long int; bool enable_for_short_integers = false; typename std::enable_if<((! tflite::is_small_integer<T>::value) || enable_for_short_integers), void>::type = void]':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:260:28:   required from 'void tflite::reference_ops::BroadcastMul4DSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = long int]'
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/mul_common.cc:141:40:   required from here
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In instantiation of 'typename std::enable_if<((! tflite::is_small_integer<T>::value) || enable_for_short_integers), void>::type tflite::reference_ops::BroadcastMul6DSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = float; bool enable_for_short_integers = false; typename std::enable_if<((! tflite::is_small_integer<T>::value) || enable_for_short_integers), void>::type = void]':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:260:28:   required from 'void tflite::reference_ops::BroadcastMul4DSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = float]'
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/mul_common.cc:196:38:   required from here
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/sub_common.cc:22:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:264:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  264 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:256:47: note: shadowed declaration is here
+  256 | void BroadcastSubSlow(const ArithmeticParams& params,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:284:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  284 |          const ArithmeticParams& params) {
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:272:59: note: shadowed declaration is here
+  272 | inline void BroadcastSub16POTSlow(const ArithmeticParams& params,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:308:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  308 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:298:52: note: shadowed declaration is here
+  298 | void BroadcastQuantSubSlow(const ArithmeticParams& params,
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:420:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  420 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:413:34: note: shadowed declaration is here
+  413 | void Sub(const ArithmeticParams& params, const RuntimeShape& input1_shape,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/sub.cc:24:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:264:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  264 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:256:47: note: shadowed declaration is here
+  256 | void BroadcastSubSlow(const ArithmeticParams& params,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:284:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  284 |          const ArithmeticParams& params) {
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:272:59: note: shadowed declaration is here
+  272 | inline void BroadcastSub16POTSlow(const ArithmeticParams& params,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:308:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  308 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:298:52: note: shadowed declaration is here
+  298 | void BroadcastQuantSubSlow(const ArithmeticParams& params,
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:420:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  420 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:413:34: note: shadowed declaration is here
+  413 | void Sub(const ArithmeticParams& params, const RuntimeShape& input1_shape,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In instantiation of 'void tflite::reference_ops::BroadcastSubSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = float]':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/sub.cc:48:44:   required from here
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:264:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  264 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:256:47: note: shadowed declaration is here
+  256 | void BroadcastSubSlow(const ArithmeticParams& params,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In instantiation of 'void tflite::reference_ops::BroadcastQuantSubSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = signed char]':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/sub.cc:91:53:   required from here
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:308:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  308 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:298:52: note: shadowed declaration is here
+  298 | void BroadcastQuantSubSlow(const ArithmeticParams& params,
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In instantiation of 'void tflite::reference_ops::BroadcastQuantSubSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = short int]':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/sub.cc:111:53:   required from here
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:308:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  308 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:298:52: note: shadowed declaration is here
+  298 | void BroadcastQuantSubSlow(const ArithmeticParams& params,
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/mul.cc:21:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:150:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  150 |       [](const ArithmeticParams& params, const uint8_t input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:126:56: note: shadowed declaration is here
+  126 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:249:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  249 |       [](const ArithmeticParams& params, const std::complex<float> input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:221:56: note: shadowed declaration is here
+  221 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc: In function 'TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:93:13: warning: unused variable 'start_time' [-Wunused-variable]
+   93 |   long long start_time = esp_timer_get_time();
+      |             ^~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/app_camera_esp.c: In function 'app_camera_init':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/app_camera_esp.c:62:3: warning: 'pin_sscb_sda' is deprecated: please use pin_sccb_sda instead [-Wdeprecated-declarations]
+   62 |   config.pin_sscb_sda = CAMERA_PIN_SIOD;
+      |   ^~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/app_camera_esp.h:20,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/main/app_camera_esp.c:16:
+/home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:123:13: note: declared here
+  123 |         int pin_sscb_sda __attribute__((deprecated("please use pin_sccb_sda instead")));           /*!< GPIO pin for camera SDA line (legacy name) */
+      |             ^~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/app_camera_esp.c:63:3: warning: 'pin_sscb_scl' is deprecated: please use pin_sccb_scl instead [-Wdeprecated-declarations]
+   63 |   config.pin_sscb_scl = CAMERA_PIN_SIOC;
+      |   ^~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:127:13: note: declared here
+  127 |         int pin_sscb_scl __attribute__((deprecated("please use pin_sccb_scl instead")));           /*!< GPIO pin for camera SCL line (legacy name) */
+      |             ^~~~~~~~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:12:
+/home/vicenterey/esp/idf/esp-idf/components/esp_wifi/include/esp_now.h:127:11: error: ambiguating new declaration of 'esp_err_t esp_now_init()'
+  127 | esp_err_t esp_now_init(void);
+      |           ^~~~~~~~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:1:
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.h:7:6: note: old declaration 'void esp_now_init()'
+    7 | void esp_now_init(void);
+      |      ^~~~~~~~~~~~
+In file included from /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:8:
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc: In function 'void esp_now_init()':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:49:31: error: void value not ignored as it ought to be
+   49 |   ESP_ERROR_CHECK(esp_now_init());
+/home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:50:44: error: invalid conversion from 'void (*)(const uint8_t*, const uint8_t*, int)' {aka 'void (*)(const unsigned char*, const unsigned char*, int)'} to 'esp_now_recv_cb_t' {aka 'void (*)(const esp_now_recv_info*, const unsigned char*, int)'} [-fpermissive]
+   50 |   ESP_ERROR_CHECK(esp_now_register_recv_cb(on_data_receive));
+      |                                            ^~~~~~~~~~~~~~~
+      |                                            |
+      |                                            void (*)(const uint8_t*, const uint8_t*, int) {aka void (*)(const unsigned char*, const unsigned char*, int)}
+/home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vicenterey/esp/idf/esp-idf/components/esp_wifi/include/esp_now.h:158:54: note:   initializing argument 1 of 'esp_err_t esp_now_register_recv_cb(esp_now_recv_cb_t)'
+  158 | esp_err_t esp_now_register_recv_cb(esp_now_recv_cb_t cb);
+      |                                    ~~~~~~~~~~~~~~~~~~^~
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/detection_responder.cc.obj] Error 1
+make[3]: *** Waiting for unfinished jobs....
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/image_provider.cc:23:
+/home/vicenterey/esp/idf/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:6:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_pair.h:60,
+                 from /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/utility:69,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/c/common.h:1463,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/c/common.h:31,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.h:4,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:2:
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:819:5: note: declared here
+  819 |     is_pod
+      |     ^~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:18:
+/home/vicenterey/esp/idf/esp-idf/components/esp_wifi/include/esp_now.h: At global scope:
+/home/vicenterey/esp/idf/esp-idf/components/esp_wifi/include/esp_now.h:127:11: error: ambiguating new declaration of 'esp_err_t esp_now_init()'
+  127 | esp_err_t esp_now_init(void);
+      |           ^~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.h:7:6: note: old declaration 'void esp_now_init()'
+    7 | void esp_now_init(void);
+      |      ^~~~~~~~~~~~
+In file included from /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/vicenterey/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/vicenterey/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:10:
+/home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc: In function 'void setup()':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:58:31: error: void value not ignored as it ought to be
+   58 |   ESP_ERROR_CHECK(esp_now_init());
+/home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:59:44: error: 'on_data_receive' was not declared in this scope
+   59 |   ESP_ERROR_CHECK(esp_now_register_recv_cb(on_data_receive));  // Registrar el callback
+      |                                            ^~~~~~~~~~~~~~~
+/home/vicenterey/esp/idf/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc: In function 'void loop()':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:123:13: error: 'message_received' was not declared in this scope
+  123 |     while (!message_received) {
+      |             ^~~~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:126:5: error: 'message_received' was not declared in this scope
+  126 |     message_received = false;  // Reiniciar la variable para la próxima espera
+      |     ^~~~~~~~~~~~~~~~
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:118: esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj] Error 1
+make[2]: *** [CMakeFiles/Makefile2:5751: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2473: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:299: flash] Error 2

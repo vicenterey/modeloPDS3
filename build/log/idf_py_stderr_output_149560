@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/vicenterey/esp/idf-tools/python_env/idf5.3_py3.10_env/lib/python3.10/site-packages/esptool/__main__.py", line 9, in <module>
+    esptool._main()
+  File "/home/vicenterey/esp/idf-tools/python_env/idf5.3_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 1314, in _main
+    main()
+  File "/home/vicenterey/esp/idf-tools/python_env/idf5.3_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 1036, in main
+    operation_func(esp, args)
+  File "/home/vicenterey/esp/idf-tools/python_env/idf5.3_py3.10_env/lib/python3.10/site-packages/esptool/cmds.py", line 491, in write_flash
+    if set_flash_size and set_flash_size > flash_end:
+TypeError: '>' not supported between instances of 'int' and 'NoneType'
+CMake Error at run_serial_tool.cmake:66 (message):
+  
+  /home/vicenterey/esp/idf-tools/python_env/idf5.3_py3.10_env/bin/python;;/home/vicenterey/esp/idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed.
+
+
+
+make[3]: *** [CMakeFiles/flash.dir/build.make:70: CMakeFiles/flash] Error 1
+make[2]: *** [CMakeFiles/Makefile2:2466: CMakeFiles/flash.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2473: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:299: flash] Error 2

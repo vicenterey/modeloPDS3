@@ -16,7 +16,6 @@
 #include "esp_psram.h"
 #include "driver/gpio.h"  // Incluir para el manejo del GPIO
 
-#define INF_POWER 0.13
 #define FLASH_PIN GPIO_NUM_4  // Definir el pin del flash
 
 namespace {
@@ -156,7 +155,6 @@ void loop() {
     }
     is_inferencing = false;  // Marcar como no en inferencia
 
-    // Enviar el string con las 4 inferencias
     char message[50];
     snprintf(message, sizeof(message), "Max score indices: %d, %d, %d, %d\n", max_score_indices[0], max_score_indices[1], max_score_indices[2], max_score_indices[3]);
     MicroPrintf(message);
@@ -164,19 +162,6 @@ void loop() {
     uart_send_string(message);
   }
 }
-#endif
-
-#if defined(COLLECT_CPU_STATS)
-  long long total_time = 0;
-  long long start_time = 0;
-  extern long long act_total_time;
-  extern long long q_total_time;
-  extern long long conv_total_time;
-  extern long long pooling_total_time;
-  extern long long resh_total_time;
-  extern long long fc_total_time;
-  extern long long softmax_total_time;
-  extern long long dq_total_time;
 #endif
 
 #ifdef CLI_ONLY_INFERENCE
@@ -195,38 +180,6 @@ void run_inference(void *ptr) {
   if (kTfLiteOk != interpreter->Invoke()) {
     MicroPrintf("Invoke failed.");
   }
-
-#if defined(COLLECT_CPU_STATS)
-  long long total_time = (esp_timer_get_time() - start_time);
-  printf("Quantize time = %.3f [ms]\n", q_total_time / 1000.0);
-  printf("Conv2D total time = %.3f [ms]\n", conv_total_time / 1000.0);
-  printf("MaxPool2D total time = %.3f [ms]\n", pooling_total_time / 1000.0);
-  printf("Reshape time = %.3f [ms]\n", resh_total_time / 1000.0);
-  printf("FullyConnected total time = %.3f [ms]\n", fc_total_time / 1000.0);
-  printf("Softmax time = %.3f [ms]\n", softmax_total_time / 1000.0);
-  printf("Dequantize time = %.3f [ms]\n", dq_total_time / 1000.0);
-  printf("Total time = %.3f [ms]\n\n", total_time / 1000.0);
-
-  printf("Quantize energy = %f [J]\n", INF_POWER * (q_total_time / 1000000.0));
-  printf("Conv2D energy = %f [J]\n", INF_POWER * (conv_total_time / 1000000.0));
-  printf("MaxPool2D energy = %f [J]\n", INF_POWER * (pooling_total_time / 1000000.0));
-  printf("Reshape energy = %f [J]\n", INF_POWER * (resh_total_time / 1000000.0));
-  printf("FullyConnected energy = %f [J]\n", INF_POWER * (fc_total_time / 1000000.0));
-  printf("Softmax energy = %f [J]\n", INF_POWER * (softmax_total_time / 1000000.0));
-  printf("Dequantize energy = %f [J]\n", INF_POWER * (dq_total_time / 1000000.0));
-  printf("Total energy = %f [J]\n\n", INF_POWER * (total_time / 1000000.0));
-
-  /* Reset times */
-  total_time = 0;
-  act_total_time = 0;
-  q_total_time = 0;
-  conv_total_time = 0;
-  pooling_total_time = 0;
-  resh_total_time = 0;
-  fc_total_time = 0;
-  softmax_total_time = 0;
-  dq_total_time = 0;
-#endif
 
   TfLiteTensor* output = interpreter->output(0);
 

@@ -1,4 +1,5 @@
 dependencies:
+  espressif/esp-now: "*"
   espressif/esp-tflite-micro:
     version: '*'
   espressif/esp32-camera:

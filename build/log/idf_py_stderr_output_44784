@@ -1,0 +1,30 @@
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:1:
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.h:7:28: error: 'esp_now_recv_info' does not name a type
+    7 | void on_data_receive(const esp_now_recv_info *recv_info, const uint8_t *data, int len);
+      |                            ^~~~~~~~~~~~~~~~~
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/detection_responder.cc.obj] Error 1
+make[3]: *** Waiting for unfinished jobs....
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:2:
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.h:7:28: error: 'esp_now_recv_info' does not name a type
+    7 | void on_data_receive(const esp_now_recv_info *recv_info, const uint8_t *data, int len);
+      |                            ^~~~~~~~~~~~~~~~~
+In file included from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/main/main_functions.cc:6:
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_pair.h:60,
+                 from /home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/utility:69,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/c/common.h:1463,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/components/espressif__esp-tflite-micro/tensorflow/lite/c/common.h:31,
+                 from /home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.h:4:
+/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:819:5: note: declared here
+  819 |     is_pod
+      |     ^~~~~~
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:118: esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj] Error 1
+make[2]: *** [CMakeFiles/Makefile2:5751: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2473: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:299: flash] Error 2

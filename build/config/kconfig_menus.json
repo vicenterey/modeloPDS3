@@ -27547,6 +27547,599 @@
             {
                 "children": [
                     {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "CU_RELINKER_ENABLE",
+                                "help": "\"Enable this option to print error information instead of\n    throwing exception when missing function\"",
+                                "id": "CU_RELINKER_ENABLE_PRINT_ERROR_INFO_WHEN_MISSING_FUNCTION",
+                                "name": "CU_RELINKER_ENABLE_PRINT_ERROR_INFO_WHEN_MISSING_FUNCTION",
+                                "range": null,
+                                "title": "Print error information when missing function",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES && CU_RELINKER_ENABLE",
+                                        "help": "\"Customized relinker configuration files path. This path is\nevaluated relative to the project root directory.\"",
+                                        "id": "CU_RELINKER_CUSTOMIZED_CONFIGURATION_FILES_PATH",
+                                        "name": "CU_RELINKER_CUSTOMIZED_CONFIGURATION_FILES_PATH",
+                                        "range": null,
+                                        "title": "Customized relinker configuration files path",
+                                        "type": "string"
+                                    }
+                                ],
+                                "depends_on": "CU_RELINKER_ENABLE",
+                                "help": "\"Enable this option to use customized relinker configuration\nfiles instead of default ones\"",
+                                "id": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES",
+                                "name": "CU_RELINKER_ENABLE_CUSTOMIZED_CONFIGURATION_FILES",
+                                "range": null,
+                                "title": "Enable customized relinker configuration files",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "\"Enable relinker to linker some IRAM functions to Flash\"",
+                        "id": "CU_RELINKER_ENABLE",
+                        "name": "CU_RELINKER_ENABLE",
+                        "range": null,
+                        "title": "Enable relinker",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
+                                "help": null,
+                                "id": "CU_DIAGNOSTICS_COLOR_NEVER",
+                                "name": "CU_DIAGNOSTICS_COLOR_NEVER",
+                                "range": null,
+                                "title": "never",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
+                                "help": null,
+                                "id": "CU_DIAGNOSTICS_COLOR_ALWAYS",
+                                "name": "CU_DIAGNOSTICS_COLOR_ALWAYS",
+                                "range": null,
+                                "title": "always",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice CU_DIAGNOSTICS_COLOR>",
+                                "help": null,
+                                "id": "CU_DIAGNOSTICS_COLOR_AUTO",
+                                "name": "CU_DIAGNOSTICS_COLOR_AUTO",
+                                "range": null,
+                                "title": "auto",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "Use color in diagnostics. \"never\", \"always\", or \"auto\". If \"always\", GCC will output\nwith color defined in GCC_COLORS environment variable. If \"never\", only output plain\ntext. If \"auto\", only output with color when the standard error is a terminal and when\nnot executing in an emacs shell.",
+                        "id": "component-config-cmake-utilities-color-in-diagnostics",
+                        "name": "CU_DIAGNOSTICS_COLOR",
+                        "title": "Color in diagnostics",
+                        "type": "choice"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "\"Enable this option, users can enable GCC link time optimization(LTO)\n feature for target components or dependencies.",
+                        "id": "CU_GCC_LTO_ENABLE",
+                        "name": "CU_GCC_LTO_ENABLE",
+                        "range": null,
+                        "title": "Enable GCC link time optimization(LTO)",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "\"Enable this option, user can make string in designated components align\n by 1-byte instead 1-word(4-byte), this can reduce unnecessary filled data\n so that to reduce firmware size.\"",
+                        "id": "CU_GCC_STRING_1BYTE_ALIGN",
+                        "name": "CU_GCC_STRING_1BYTE_ALIGN",
+                        "range": null,
+                        "title": "GCC string 1-byte align",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-cmake-utilities",
+                "title": "CMake Utilities",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_APP_SECURITY",
+                                        "help": "Enable to secure all application data.",
+                                        "id": "ESPNOW_ALL_SECURITY",
+                                        "name": "ESPNOW_ALL_SECURITY",
+                                        "range": null,
+                                        "title": "Secure all data",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_APP_SECURITY && !ESPNOW_ALL_SECURITY",
+                                        "help": "Enable to secure the control data.",
+                                        "id": "ESPNOW_CONTROL_SECURITY",
+                                        "name": "ESPNOW_CONTROL_SECURITY",
+                                        "range": null,
+                                        "title": "Secure control data",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_APP_SECURITY && !ESPNOW_ALL_SECURITY",
+                                        "help": "Enable to secure the debug data.",
+                                        "id": "ESPNOW_DEBUG_SECURITY",
+                                        "name": "ESPNOW_DEBUG_SECURITY",
+                                        "range": null,
+                                        "title": "Secure debug data",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_APP_SECURITY && !ESPNOW_ALL_SECURITY",
+                                        "help": "Enable to secure the OTA data.",
+                                        "id": "ESPNOW_OTA_SECURITY",
+                                        "name": "ESPNOW_OTA_SECURITY",
+                                        "range": null,
+                                        "title": "Secure OTA data",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_APP_SECURITY && !ESPNOW_ALL_SECURITY",
+                                        "help": "Enable to secure the provisioning data.",
+                                        "id": "ESPNOW_PROV_SECURITY",
+                                        "name": "ESPNOW_PROV_SECURITY",
+                                        "range": null,
+                                        "title": "Secure provisioning data",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "help": "Enable to secure the application level data.",
+                                "id": "ESPNOW_APP_SECURITY",
+                                "name": "ESPNOW_APP_SECURITY",
+                                "range": null,
+                                "title": "Secure application data",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-esp-now-configuration-esp-now-security-configuration",
+                        "title": "ESP-NOW Security Configuration",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_LIGHT_SLEEP",
+                                        "help": "Set the duration of light sleep, make it enough to charge the electric capacity.",
+                                        "id": "ESPNOW_LIGHT_SLEEP_DURATION",
+                                        "name": "ESPNOW_LIGHT_SLEEP_DURATION",
+                                        "range": null,
+                                        "title": "Light sleep duration",
+                                        "type": "int"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "help": "Since sending an ESP-NOW package needs a lot of power, if the coin cell solution is used, it needs some time to charge the electric capacity, so let device enter light sleep to wait some time.",
+                                "id": "ESPNOW_LIGHT_SLEEP",
+                                "name": "ESPNOW_LIGHT_SLEEP",
+                                "range": null,
+                                "title": "Enter light sleep before sending ESP-NOW package",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-esp-now-configuration-esp-now-light-sleep-configuration",
+                        "title": "ESP-NOW Light Sleep Configuration",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_CONTROL_AUTO_CHANNEL_SENDING",
+                                        "help": "Set the duration to wait for ACK. Use a value big enough to avoid retransmissions.",
+                                        "id": "ESPNOW_CONTROL_WAIT_ACK_DURATION",
+                                        "name": "ESPNOW_CONTROL_WAIT_ACK_DURATION",
+                                        "range": null,
+                                        "title": "Duration to wait for ACK",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_CONTROL_AUTO_CHANNEL_SENDING",
+                                        "help": "The ESP-NOW package will be sent on the saved channel for this retransmission times, then try the auto channel sending.",
+                                        "id": "ESPNOW_CONTROL_RETRANSMISSION_TIMES",
+                                        "name": "ESPNOW_CONTROL_RETRANSMISSION_TIMES",
+                                        "range": null,
+                                        "title": "Retransmission times when sending an ESP-NOW package from the saved channel",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_CONTROL_AUTO_CHANNEL_SENDING",
+                                        "help": "The ESP-NOW package will be forwarded on different channels.",
+                                        "id": "ESPNOW_CONTROL_AUTO_CHANNEL_FORWARD",
+                                        "name": "ESPNOW_CONTROL_AUTO_CHANNEL_FORWARD",
+                                        "range": null,
+                                        "title": "Auto control ESP-NOW package forwarding on different channels",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_CONTROL_AUTO_CHANNEL_SENDING",
+                                        "help": "The ESP-NOW package will be forward when the number of hops in data transfer is not zero.",
+                                        "id": "ESPNOW_CONTROL_FORWARD_TTL",
+                                        "name": "ESPNOW_CONTROL_FORWARD_TTL",
+                                        "range": null,
+                                        "title": "The max number of hops when forward data",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "ESPNOW_CONTROL_AUTO_CHANNEL_SENDING",
+                                        "help": "The ESP-NOW package will not be forward when the data packet signal received by the receiving device is lower than the value.",
+                                        "id": "ESPNOW_CONTROL_FORWARD_RSSI",
+                                        "name": "ESPNOW_CONTROL_FORWARD_RSSI",
+                                        "range": null,
+                                        "title": "The worst signal of the hop when forward data",
+                                        "type": "int"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "help": "The channel sequence used for ESP-NOW package sending is [1, 6, 11, 1, 6, 11, 2, 3, 4, 5, 7, 8, 9, 10, 12, 13] by default.",
+                                "id": "ESPNOW_CONTROL_AUTO_CHANNEL_SENDING",
+                                "name": "ESPNOW_CONTROL_AUTO_CHANNEL_SENDING",
+                                "range": null,
+                                "title": "Auto control the channel of ESP-NOW package sending",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-esp-now-configuration-esp-now-control-configuration",
+                        "title": "ESP-NOW Control Configuration",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "The ESP-NOW package will be sent on the saved channel for this retransmission times",
+                                "id": "ESPNOW_OTA_RETRANSMISSION_TIMES",
+                                "name": "ESPNOW_OTA_RETRANSMISSION_TIMES",
+                                "range": [
+                                    1,
+                                    15
+                                ],
+                                "title": "Retransmission times when sending an ESP-NOW OTA package from the saved channel",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Number of times initiator will try to update device",
+                                "id": "ESPNOW_OTA_RETRY_COUNT",
+                                "name": "ESPNOW_OTA_RETRY_COUNT",
+                                "range": null,
+                                "title": "OTA send retry count",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "The ESP-NOW OTA package will be forward when the number of hops in data transfer is not zero.",
+                                "id": "ESPNOW_OTA_SEND_FORWARD_TTL",
+                                "name": "ESPNOW_OTA_SEND_FORWARD_TTL",
+                                "range": [
+                                    0,
+                                    31
+                                ],
+                                "title": "The max number of hops when forward data",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "The ESP-NOW OTA package will not be forward when the data packet signal received by the receiving device is lower than the value.",
+                                "id": "ESPNOW_OTA_SEND_FORWARD_RSSI",
+                                "name": "ESPNOW_OTA_SEND_FORWARD_RSSI",
+                                "range": [
+                                    -70,
+                                    -30
+                                ],
+                                "title": "The worst signal of the hop when forward data",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "The ESP-NOW OTA will wait for respond for maximum given time",
+                                "id": "ESPNOW_OTA_WAIT_RESPONSE_TIMEOUT",
+                                "name": "ESPNOW_OTA_WAIT_RESPONSE_TIMEOUT",
+                                "range": [
+                                    100,
+                                    10000
+                                ],
+                                "title": "Time to wait for responder to answer in ms",
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-esp-now-configuration-esp-now-ota-configuration",
+                        "title": "ESP-NOW OTA configuration",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "If the primary channel has changed during package sending, restore the primary channel at the end of sending.",
+                        "id": "ESPNOW_AUTO_RESTORE_CHANNEL",
+                        "name": "ESPNOW_AUTO_RESTORE_CHANNEL",
+                        "range": null,
+                        "title": "Restore primary channel at the end of ESP-NOW package sending",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Select whether to call the ack handler immediately in the data receive callback, or queue it and call it when idle.",
+                        "id": "ESPNOW_DATA_FAST_ACK",
+                        "name": "ESPNOW_DATA_FAST_ACK",
+                        "range": null,
+                        "title": "Call the ack handler immediately in the data receive callback",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESPNOW_MEM_ALLOCATION_LOCATION>",
+                                        "help": null,
+                                        "id": "ESPNOW_MEM_ALLOCATION_DEFAULT",
+                                        "name": "ESPNOW_MEM_ALLOCATION_DEFAULT",
+                                        "range": null,
+                                        "title": "default allocation strategy",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "(ESP32S3_SPIRAM_SUPPORT || ESP32S2_SPIRAM_SUPPORT || ESP32_SPIRAM_SUPPORT) && <choice ESPNOW_MEM_ALLOCATION_LOCATION>",
+                                        "help": null,
+                                        "id": "ESPNOW_MEM_ALLOCATION_SPIRAM",
+                                        "name": "ESPNOW_MEM_ALLOCATION_SPIRAM",
+                                        "range": null,
+                                        "title": "allocate memory in SPIRAM",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "help": "choice where to allocate memory, can be SPIRAM or default",
+                                "id": "component-config-esp-now-configuration-esp-now-utils-configuration-the-memory-location-allocated-by-malloc-calloc-and-realloc",
+                                "name": "ESPNOW_MEM_ALLOCATION_LOCATION",
+                                "title": "The memory location allocated by MALLOC, CALLOC and REALLOC",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Memory debug.",
+                                "id": "ESPNOW_MEM_DEBUG",
+                                "name": "ESPNOW_MEM_DEBUG",
+                                "range": null,
+                                "title": "Memory debug",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Config Memory debug record max.",
+                                "id": "ESPNOW_MEM_DBG_INFO_MAX",
+                                "name": "ESPNOW_MEM_DBG_INFO_MAX",
+                                "range": null,
+                                "title": "The max records for Memory debug.",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Namespace where data is stored in NVS.",
+                                "id": "ESPNOW_NVS_NAMESPACE",
+                                "name": "ESPNOW_NVS_NAMESPACE",
+                                "range": null,
+                                "title": "Namespace where data is stored in NVS",
+                                "type": "string"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Continuous reboot interval.",
+                                "id": "ESPNOW_REBOOT_UNBROKEN_INTERVAL_TIMEOUT",
+                                "name": "ESPNOW_REBOOT_UNBROKEN_INTERVAL_TIMEOUT",
+                                "range": null,
+                                "title": "Continuous reboot interval(ms)",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Continuous restart triggers version rollback.",
+                                "id": "ESPNOW_REBOOT_UNBROKEN_FALLBACK_COUNT",
+                                "name": "ESPNOW_REBOOT_UNBROKEN_FALLBACK_COUNT",
+                                "range": null,
+                                "title": "Continuous restart triggers version rollback",
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-esp-now-configuration-esp-now-utils-configuration",
+                        "title": "ESP-NOW Utils Configuration",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": null,
+                                        "help": "Linenoise line editing library provides functions to save and load\ncommand history. If this option is enabled, initalizes a FAT filesystem\nand uses it to store command history.",
+                                        "id": "ESPNOW_STORE_HISTORY",
+                                        "name": "ESPNOW_STORE_HISTORY",
+                                        "range": null,
+                                        "title": "Store command history in flash",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "id": "component-config-esp-now-configuration-esp-now-debug-configuration-debug-console-configuration",
+                                "title": "Debug console Configuration",
+                                "type": "menu"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": null,
+                                        "help": "Store log info partition label.",
+                                        "id": "ESPNOW_DEBUG_LOG_PARTITION_LABEL_DATA",
+                                        "name": "ESPNOW_DEBUG_LOG_PARTITION_LABEL_DATA",
+                                        "range": null,
+                                        "title": "The partition label used to store log info",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": null,
+                                        "help": "Store log status partition label.",
+                                        "id": "ESPNOW_DEBUG_LOG_PARTITION_LABEL_NVS",
+                                        "name": "ESPNOW_DEBUG_LOG_PARTITION_LABEL_NVS",
+                                        "range": null,
+                                        "title": "The partition lable used to store log status",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": null,
+                                        "help": "The file size of the log",
+                                        "id": "ESPNOW_DEBUG_LOG_FILE_MAX_SIZE",
+                                        "name": "ESPNOW_DEBUG_LOG_FILE_MAX_SIZE",
+                                        "range": [
+                                            8196,
+                                            131072
+                                        ],
+                                        "title": "The file size of the log",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": null,
+                                        "help": "Offset of the log information partition",
+                                        "id": "ESPNOW_DEBUG_LOG_PARTITION_OFFSET",
+                                        "name": "ESPNOW_DEBUG_LOG_PARTITION_OFFSET",
+                                        "range": [
+                                            0,
+                                            524288
+                                        ],
+                                        "title": "Offset of the log information in partition",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": null,
+                                        "help": "Output the `printf` information of the espnow module",
+                                        "id": "ESPNOW_DEBUG_LOG_PRINTF_ENABLE",
+                                        "name": "ESPNOW_DEBUG_LOG_PRINTF_ENABLE",
+                                        "range": null,
+                                        "title": "Output the `printf` information of the espnow module",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "id": "component-config-esp-now-configuration-esp-now-debug-configuration-debug-log-configuration",
+                                "title": "Debug Log Configuration",
+                                "type": "menu"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESPNOW_DEBUG_CONSOLE_UART_NUM>",
+                                        "help": null,
+                                        "id": "ESPNOW_DEBUG_CONSOLE_UART_NUM_0",
+                                        "name": "ESPNOW_DEBUG_CONSOLE_UART_NUM_0",
+                                        "range": null,
+                                        "title": "UART0",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESPNOW_DEBUG_CONSOLE_UART_NUM>",
+                                        "help": null,
+                                        "id": "ESPNOW_DEBUG_CONSOLE_UART_NUM_1",
+                                        "name": "ESPNOW_DEBUG_CONSOLE_UART_NUM_1",
+                                        "range": null,
+                                        "title": "UART1",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "help": "UART to be selected for serial console.",
+                                "id": "component-config-esp-now-configuration-esp-now-debug-configuration-uart-for-console-input",
+                                "name": "ESPNOW_DEBUG_CONSOLE_UART_NUM",
+                                "title": "UART for console input",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": null,
+                                "id": "ESPNOW_DEBUG_CONSOLE_UART_NUM",
+                                "name": "ESPNOW_DEBUG_CONSOLE_UART_NUM",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-esp-now-configuration-esp-now-debug-configuration",
+                        "title": "ESP-NOW Debug Configuration",
+                        "type": "menu"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-esp-now-configuration",
+                "title": "ESP-NOW Configuration",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
                         "children": [],
                         "depends_on": null,
                         "help": "Enable this option if you want to use the OV7670.\nDisable this option to save memory.",
@@ -27851,6 +28444,46 @@
                             32768
                         ],
                         "title": "DMA buffer size",
+                        "type": "int"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "<choice CAMERA_JPEG_MODE_FRAME_SIZE_OPTION>",
+                                "help": "Use the default calculation for JPEG mode frame size.\nNote: In very low resolutions like QQVGA, the default calculation tends to result in insufficient buffer size.",
+                                "id": "CAMERA_JPEG_MODE_FRAME_SIZE_AUTO",
+                                "name": "CAMERA_JPEG_MODE_FRAME_SIZE_AUTO",
+                                "range": null,
+                                "title": "Use automatic calculation (width * height / 5)",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice CAMERA_JPEG_MODE_FRAME_SIZE_OPTION>",
+                                "help": "Specify a custom frame size in bytes for JPEG mode.",
+                                "id": "CAMERA_JPEG_MODE_FRAME_SIZE_CUSTOM",
+                                "name": "CAMERA_JPEG_MODE_FRAME_SIZE_CUSTOM",
+                                "range": null,
+                                "title": "Specify custom frame size",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "Select whether to use automatic calculation for JPEG mode frame size or specify a custom value.",
+                        "id": "component-config-camera-configuration-jpeg-mode-frame-size-option",
+                        "name": "CAMERA_JPEG_MODE_FRAME_SIZE_OPTION",
+                        "title": "JPEG mode frame size option",
+                        "type": "choice"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "CAMERA_JPEG_MODE_FRAME_SIZE_CUSTOM",
+                        "help": "This option sets the custom frame size in JPEG mode.\nSpecify the desired buffer size in bytes.",
+                        "id": "CAMERA_JPEG_MODE_FRAME_SIZE",
+                        "name": "CAMERA_JPEG_MODE_FRAME_SIZE",
+                        "range": null,
+                        "title": "Custom JPEG mode frame size (bytes)",
                         "type": "int"
                     },
                     {
