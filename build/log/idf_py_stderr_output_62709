@@ -1,8 +1,0 @@
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(detection_responder.cc.obj):(.literal._Z18RespondToDetectionPfPPKc+0x18): undefined reference to `_Z16uart_send_stringPKc'
-/home/vicenterey/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(detection_responder.cc.obj): in function `_Z18RespondToDetectionPfPPKc':
-/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:68:(.text._Z18RespondToDetectionPfPPKc+0xb0): undefined reference to `_Z16uart_send_stringPKc'
-collect2: error: ld returned 1 exit status
-make[3]: *** [CMakeFiles/person_detection.elf.dir/build.make:584: person_detection.elf] Error 1
-make[2]: *** [CMakeFiles/Makefile2:2535: CMakeFiles/person_detection.elf.dir/all] Error 2
-make[1]: *** [CMakeFiles/Makefile2:2437: CMakeFiles/flash.dir/rule] Error 2
-make: *** [Makefile:299: flash] Error 2

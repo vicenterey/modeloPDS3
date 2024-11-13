@@ -1152,7 +1152,13 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj: ../main/main_funct
   /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log.h \
   /home/vicenterey/esp/idf/esp-idf/components/log/include/esp_log_internal.h \
   ../main/esp_main.h \
-  /home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h
+  /home/vicenterey/esp/idf/esp-idf/components/esp_psram/include/esp_psram.h \
+  /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
+  /home/vicenterey/esp/idf/esp-idf/components/hal/include/hal/gpio_types.h \
+  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
+  /home/vicenterey/esp/idf/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
+  /home/vicenterey/esp/idf/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+  /home/vicenterey/esp/idf/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h
 
 esp-idf/main/CMakeFiles/__idf_main.dir/model_settings.cc.obj: ../main/model_settings.cc \
   ../main/model_settings.h

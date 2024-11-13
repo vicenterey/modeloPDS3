@@ -1,0 +1,87 @@
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc: In function 'void uart_init()':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:20:29: error: expected '}' before ';' token
+   20 | #define UART_BAUD_RATE 57600;
+      |                             ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:26:22: note: in expansion of macro 'UART_BAUD_RATE'
+   26 |         .baud_rate = UART_BAUD_RATE,
+      |                      ^~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:25:39: note: to match this '{'
+   25 |     const uart_config_t uart_config = {
+      |                                       ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:20:29: warning: missing initializer for member 'uart_config_t::data_bits' [-Wmissing-field-initializers]
+   20 | #define UART_BAUD_RATE 57600;
+      |                             ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:26:22: note: in expansion of macro 'UART_BAUD_RATE'
+   26 |         .baud_rate = UART_BAUD_RATE,
+      |                      ^~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:20:29: warning: missing initializer for member 'uart_config_t::parity' [-Wmissing-field-initializers]
+   20 | #define UART_BAUD_RATE 57600;
+      |                             ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:26:22: note: in expansion of macro 'UART_BAUD_RATE'
+   26 |         .baud_rate = UART_BAUD_RATE,
+      |                      ^~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:20:29: warning: missing initializer for member 'uart_config_t::stop_bits' [-Wmissing-field-initializers]
+   20 | #define UART_BAUD_RATE 57600;
+      |                             ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:26:22: note: in expansion of macro 'UART_BAUD_RATE'
+   26 |         .baud_rate = UART_BAUD_RATE,
+      |                      ^~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:20:29: warning: missing initializer for member 'uart_config_t::flow_ctrl' [-Wmissing-field-initializers]
+   20 | #define UART_BAUD_RATE 57600;
+      |                             ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:26:22: note: in expansion of macro 'UART_BAUD_RATE'
+   26 |         .baud_rate = UART_BAUD_RATE,
+      |                      ^~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:20:29: warning: missing initializer for member 'uart_config_t::rx_flow_ctrl_thresh' [-Wmissing-field-initializers]
+   20 | #define UART_BAUD_RATE 57600;
+      |                             ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:26:22: note: in expansion of macro 'UART_BAUD_RATE'
+   26 |         .baud_rate = UART_BAUD_RATE,
+      |                      ^~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:20:29: warning: missing initializer for member 'uart_config_t::<anonymous>' [-Wmissing-field-initializers]
+   20 | #define UART_BAUD_RATE 57600;
+      |                             ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:26:22: note: in expansion of macro 'UART_BAUD_RATE'
+   26 |         .baud_rate = UART_BAUD_RATE,
+      |                      ^~~~~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:26:36: error: expected primary-expression before ',' token
+   26 |         .baud_rate = UART_BAUD_RATE,
+      |                                    ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:27:9: error: expected primary-expression before '.' token
+   27 |         .data_bits = UART_DATA_8_BITS,
+      |         ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:28:9: error: expected primary-expression before '.' token
+   28 |         .parity = UART_PARITY_DISABLE,
+      |         ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:29:9: error: expected primary-expression before '.' token
+   29 |         .stop_bits = UART_STOP_BITS_1,
+      |         ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:30:9: error: expected primary-expression before '.' token
+   30 |         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+      |         ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:31:9: error: expected primary-expression before '.' token
+   31 |         .source_clk = UART_SCLK_DEFAULT,
+      |         ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:32:5: error: expected primary-expression before '}' token
+   32 |     };
+      |     ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:25:25: warning: unused variable 'uart_config' [-Wunused-variable]
+   25 |     const uart_config_t uart_config = {
+      |                         ^~~~~~~~~~~
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc: At global scope:
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:34:24: error: expected constructor, destructor, or type conversion before '(' token
+   34 |     uart_driver_install(UART_NUM_2, RX_BUF_SIZE * 2, 0, 0, NULL, 0);
+      |                        ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:35:22: error: expected constructor, destructor, or type conversion before '(' token
+   35 |     uart_param_config(UART_NUM_2, &uart_config);
+      |                      ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:36:17: error: expected constructor, destructor, or type conversion before '(' token
+   36 |     uart_set_pin(UART_NUM_2, TXD_PIN, RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+      |                 ^
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:37:1: error: expected declaration before '}' token
+   37 | }
+      | ^
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/detection_responder.cc.obj] Error 1
+make[2]: *** [CMakeFiles/Makefile2:5675: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2437: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:299: flash] Error 2

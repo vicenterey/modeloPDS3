@@ -14,8 +14,10 @@
 #include <esp_log.h>
 #include "esp_main.h"
 #include "esp_psram.h"
+#include "driver/gpio.h"  // Incluir para el manejo del GPIO
 
 #define INF_POWER 0.13
+#define FLASH_PIN GPIO_NUM_4  // Definir el pin del flash
 
 namespace {
 const tflite::Model* model = nullptr;
@@ -48,11 +50,15 @@ void setup() {
   printf("Total PSRAM size: %d\n", esp_psram_get_size());
   printf("Free PSRAM size: %d\n", heap_caps_get_free_size(MALLOC_CAP_SPIRAM));
 
+  // Initialize UART and GPIO
+  uart_init();
+  esp_rom_gpio_pad_select_gpio(FLASH_PIN);
+  gpio_set_direction(FLASH_PIN, GPIO_MODE_OUTPUT);
+
   // Initialize model
   model = tflite::GetModel(g_person_detect_model_data);
   if (model->version() != TFLITE_SCHEMA_VERSION) {
-    MicroPrintf("Model provided is schema version %d not equal to supported "
-                "version %d.", model->version(), TFLITE_SCHEMA_VERSION);
+    MicroPrintf("Model provided is schema version %d not equal to supported version %d.", model->version(), TFLITE_SCHEMA_VERSION);
     return;
   }
 
@@ -96,26 +102,46 @@ void setup() {
     return;
   }
 #endif
-uart_init();
 }
 
 #ifndef CLI_ONLY_INFERENCE
 void loop() {
   char rx_buffer[128];
+  bool is_inferencing = false;
 
   while (true) {
+    // Reiniciar el buffer
+    memset(rx_buffer, 0, sizeof(rx_buffer));
+
     // Esperar a recibir un mensaje UART
     uart_receive_string(rx_buffer, sizeof(rx_buffer));
 
+    // Si estamos inferenciando, no enviar mensajes
+    if (is_inferencing) {
+      ESP_LOGI("Main Loop", "Skipping UART send as inference is in progress.");
+      continue;
+    }
+
+    // Agregar un retardo de 100 ms
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+
+    // Encender el flash durante un milisegundo
+    gpio_set_level(FLASH_PIN, 1);
+    vTaskDelay(10 / portTICK_PERIOD_MS);
+    gpio_set_level(FLASH_PIN, 0);
+
     // Realizar la inferencia de las cuatro fotos
     int max_score_indices[4];
+    is_inferencing = true;  // Marcar como en inferencia
     for (int i = 0; i < 4; ++i) {
       if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.f)) {
         MicroPrintf("Image capture failed.");
+        continue;  // Agregar manejo de errores
       }
 
       if (kTfLiteOk != interpreter->Invoke()) {
         MicroPrintf("Invoke failed.");
+        continue;  // Agregar manejo de errores
       }
 
       TfLiteTensor* output = interpreter->output(0);
@@ -128,11 +154,13 @@ void loop() {
       max_score_indices[i] = RespondToDetection(sign_scores, kCategoryLabels);
       vTaskDelay(5000 / portTICK_RATE_MS);
     }
+    is_inferencing = false;  // Marcar como no en inferencia
 
     // Enviar el string con las 4 inferencias
     char message[50];
     snprintf(message, sizeof(message), "Max score indices: %d, %d, %d, %d\n", max_score_indices[0], max_score_indices[1], max_score_indices[2], max_score_indices[3]);
     MicroPrintf(message);
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
     uart_send_string(message);
   }
 }

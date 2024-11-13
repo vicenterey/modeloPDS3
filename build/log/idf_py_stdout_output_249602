@@ -1,0 +1,16 @@
+Detected sign: L
+C: 0.246094, L: 0.750000, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.339844, L: 0.660156, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.292969, L: 0.707031, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+Max score indices: 1, 1, 1, 1
+[0;32mI (71078) UART: Wrote 29 bytes[0m
+[0;32mI (71088) UART: Received 29 bytes: 'oi}�sc��o�i����m>g�Nϰn�ئ+��'[0m
+[0;32mI (71088) UART: 0x3ffb7900   6f 69 7d b5 73 63 ff f2  6f a5 69 ff f7 ed e3 6d  |oi}.sc..o.i....m|[0m
+[0;32mI (71088) UART: 0x3ffb7910   3e 67 fc 4e cf b0 6e cb  d8 a6 2b fb fb           |>g.N..n...+..|[0m
+
+Detected sign: L
+C: 0.292969, L: 0.707031, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000

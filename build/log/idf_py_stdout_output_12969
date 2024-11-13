@@ -1,0 +1,216 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2747-g4f3cd0deb9-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 12 2024 18:04:33[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (45) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (54) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (59) boot: Enabling RNG early entropy source...[0m
+[0;32mI (64) boot: Partition Table:[0m
+[0;32mI (68) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (75) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (90) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=e6f34h (945972) map[0m
+[0;32mI (352) esp_image: segment 1: paddr=000f6f5c vaddr=3ffb0000 size=0337ch ( 13180) load[0m
+[0;32mI (356) esp_image: segment 2: paddr=000fa2e0 vaddr=40080000 size=05d38h ( 23864) load[0m
+[0;32mI (366) esp_image: segment 3: paddr=00100020 vaddr=400d0020 size=35b18h (219928) map[0m
+[0;32mI (423) esp_image: segment 4: paddr=00135b40 vaddr=40085d38 size=0b2c0h ( 45760) load[0m
+[0;32mI (446) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (446) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (458) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (458) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (460) esp_psram: Speed: 80MHz[0m
+[0;32mI (464) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (471) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (947) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (955) cpu_start: Pro cpu start user code[0m
+[0;32mI (955) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (955) app_init: Application information:[0m
+[0;32mI (958) app_init: Project name:     person_detection[0m
+[0;32mI (964) app_init: App version:      fe3c936-dirty[0m
+[0;32mI (969) app_init: Compile time:     Nov 12 2024 18:04:50[0m
+[0;32mI (975) app_init: ELF file SHA256:  1f30098ec...[0m
+[0;32mI (980) app_init: ESP-IDF:          v5.3-dev-2747-g4f3cd0deb9-dirty[0m
+[0;32mI (987) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (992) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (997) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1002) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1009) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1015) heap_init: At 3FFB4158 len 0002BEA8 (175 KiB): DRAM[0m
+[0;32mI (1021) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1028) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1034) heap_init: At 40090FF8 len 0000F008 (60 KiB): IRAM[0m
+[0;32mI (1041) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1049) spi_flash: detected chip: generic[0m
+[0;32mI (1053) spi_flash: flash io: qio[0m
+[0;33mW (1057) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1068) main_task: Started on CPU0[0m
+[0;32mI (1078) main_task: Calling app_main()[0m
+Total heap size: 4509528
+Free heap size: 4484284
+Total PSRAM size: 8388608
+Free PSRAM size: 4191744
+Free heap size after allocation: 4300688
+Free PSRAM size after allocation: 4008180
+[0;32mI (1088) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1098) cam_hal: cam init ok[0m
+[0;32mI (1098) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1108) sccb: sccb_i2c_port=1[0m
+[0;32mI (1108) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1148) camera: Detected camera at address=0x30[0m
+[0;32mI (1148) camera: Detected OV2640 camera[0m
+[0;32mI (1148) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1218) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1228) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1238) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1248) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1248) cam_hal: cam config ok[0m
+[0;32mI (1258) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Modificando los sensores...
+PID: 0x26
+Camera Initialized
+
+[0;32mI (1938) UART: Received 10 bytes: 'xeol����_�'[0m
+[0;32mI (1938) UART: 0x3ffb7900   78 65 6f 6c cf e9 d7 ef  5f f9                    |xeol...._.|[0m
+
+Detected sign: L
+C: 0.000000, L: 0.996094, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.007812, L: 0.988281, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.011719, L: 0.988281, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.015625, L: 0.984375, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+Max score indices: 1, 1, 1, 1
+[0;32mI (28248) UART: Wrote 29 bytes[0m
+[0;32mI (28248) UART: Received 127 bytes: '�}���k�����[��os��I}l��ozn�J_[������[uo�o�w_���M��[�ݽ����el�%�[�������oa˹��_�lo���˶t�ello�worndXo�l������g�|o%wr|m�'[0m
+[0;32mI (28258) UART: 0x3ffb7900   df 7d fe b6 e0 7f 6b fb  9f cd f9 df 5b bf ba 6f  |.}....k.....[..o|[0m
+[0;32mI (28268) UART: 0x3ffb7910   73 b7 b3 49 7d 6c b6 7f  a1 7f 6f 7a 6e ba 4a 5f  |s..I}l....ozn.J_|[0m
+[0;32mI (28278) UART: 0x3ffb7920   5b be 1b ed fd e9 b9 f1  ff 5b 75 6f b6 6f e1 77  |[........[uo.o.w|[0m
+[0;32mI (28278) UART: 0x3ffb7930   5f b9 b5 ff 4d d9 db 5b  b9 dd bd c9 f1 f1 ca 65  |_...M..[.......e|[0m
+[0;32mI (28288) UART: 0x3ffb7940   6c b6 7f 25 d7 5b b5 b1  ff fb f5 fe fe 6f 61 7f  |l..%.[.......oa.|[0m
+[0;32mI (28298) UART: 0x3ffb7950   cb b9 95 ff 5f f5 6c 6f  ff b8 f7 cb b6 74 c8 65  |...._.lo.....t.e|[0m
+[0;32mI (28308) UART: 0x3ffb7960   6c 6c 6f a0 77 6f 72 6e  64 58 6f b6 6c 8f ef bf  |llo.worndXo.l...|[0m
+[0;32mI (28318) UART: 0x3ffb7970   f9 b9 ba a4 67 b6 7c 6f  25 77 7f 72 7c 6d ee     |....g.|o%w.r|m.|[0m
+
+Detected sign: L
+C: 0.015625, L: 0.984375, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.019531, L: 0.980469, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.312500, L: 0.609375, Puno: 0.015625, Cruzados: 0.023438, Rock: 0.015625, Palma: 0.023438
+
+Detected sign: L
+C: 0.023438, L: 0.976562, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+Max score indices: 1, 1, 1, 1
+[0;32mI (54638) UART: Wrote 29 bytes[0m
+[0;32mI (54638) UART: Received 127 bytes: '�������~�g�~���6����{�޿��~�׻��������5�os}��o���������R^�o������eݽ��������������o�Ͻu�e|lo�worlexe��~n�����or�'[0m
+[0;32mI (54648) UART: 0x3ffb7900   f5 b7 bf 8f ed 7f bd b6  7e fd 67 fc 7e bf fe af  |........~.g.~...|[0m
+[0;32mI (54658) UART: 0x3ffb7910   36 ff db cb ff 7b ff de  bf a7 ad 7e 1f fb d7 bb  |6....{.....~....|[0m
+[0;32mI (54668) UART: 0x3ffb7920   df f7 1e cf ff e9 ed bf  b7 35 ff 6f 73 7d f6 a7  |.........5.os}..|[0m
+[0;32mI (54668) UART: 0x3ffb7930   6f fc ec ff e9 d7 cf f5  d1 ff 52 5e f1 6f 91 bf  |o.........R^.o..|[0m
+[0;32mI (54678) UART: 0x3ffb7940   f9 fe b2 b5 65 ee bf 83  dd bd ed bd 95 ff b4 16  |....e...........|[0m
+[0;32mI (54688) UART: 0x3ffb7950   7f 8b ed cf f5 f9 ff b4  f7 b6 7f 6f db 7f cf bd  |...........o....|[0m
+[0;32mI (54698) UART: 0x3ffb7960   75 a5 65 7c 6c 6f a0 77  6f 72 6c 65 78 65 b7 7f  |u.e|lo.worlexe..|[0m
+[0;32mI (54708) UART: 0x3ffb7970   ef 9a bd db 7e 6e a4 bb  b9 bf 99 7f 6f 72 b6     |....~n......or.|[0m
+
+Detected sign: L
+C: 0.019531, L: 0.980469, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.019531, L: 0.980469, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.019531, L: 0.980469, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.019531, L: 0.980469, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+Max score indices: 1, 1, 1, 1
+[0;32mI (81028) UART: Wrote 29 bytes[0m
+[0;32mI (81028) UART: Received 127 bytes: 'u��l���o���Hg�|�`���tKmn|o���n�}�m�����?u��[��[����߿g���������Ho~no,wor��Z][����|d[�ln� w�m|Hello wor�l|������[�v�[�/'[0m
+[0;32mI (81038) UART: 0x3ffb7900   75 b7 ef 6c b7 c1 dd 6f  bd be ba 48 67 b6 7c ef  |u..l...o...Hg.|.|[0m
+[0;32mI (81048) UART: 0x3ffb7910   60 f7 f9 bf 74 4b 6d 6e  7c 6f 99 7f ff f2 6e e5  |`...tKmn|o....n.|[0m
+[0;32mI (81058) UART: 0x3ffb7920   b4 7d b6 6d 7f 98 d7 ef  be fe af 3f 75 ff fe 5b  |.}.m.......?u..[|[0m
+[0;32mI (81058) UART: 0x3ffb7930   f5 8b 5b 9f eb fb ff df  bf 67 ac a6 1d ff ee af  |..[......g......|[0m
+[0;32mI (81068) UART: 0x3ffb7940   de ee 85 ff fe 48 6f 7e  6e 6f 2c 77 6f 72 b6 d9  |.....Ho~no,wor..|[0m
+[0;32mI (81078) UART: 0x3ffb7950   5a 5d 5b b6 1b e9 f7 f7  7c 64 5b e7 6c 6e ef 20  |Z][.....|d[.ln. |[0m
+[0;32mI (81088) UART: 0x3ffb7960   77 7f f2 6d 7c 48 65 6c  6c 6f 20 77 6f 72 ee 6c  |w..m|Hello wor.l|[0m
+[0;32mI (81098) UART: 0x3ffb7970   7c e5 ec b7 ff fa df 5b  fb 76 ce 7f 5b b6 2f     ||......[.v..[./|[0m
+
+Detected sign: L
+C: 0.019531, L: 0.980469, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.023438, L: 0.976562, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.023438, L: 0.972656, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.023438, L: 0.976562, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+Max score indices: 1, 1, 1, 1
+[0;32mI (107418) UART: Wrote 29 bytes[0m
+[0;32mI (107418) UART: Received 127 bytes: '�z�[�o���f�][[�{�e�}o���ͳ���unmo�wosn���[��ɵ���][�����m|�Y[���������������^�o����ڳ��n�������ello wo~~di{[�������^'[0m
+[0;32mI (107428) UART: 0x3ffb7900   e9 bd 7a ec bb 5b 7f cb  6f b6 ff 7f b6 66 a6 5d  |..z..[..o....f.]|[0m
+[0;32mI (107438) UART: 0x3ffb7910   5b 5b 1b ef bd 7b ee 65  b4 7d 6f ec 8f e9 ff cd  |[[...{.e.}o.....|[0m
+[0;32mI (107448) UART: 0x3ffb7920   b3 d1 ff cf 75 6e 6d 6f  a7 77 6f 73 6e e7 ec dd  |....unmo.wosn...|[0m
+[0;32mI (107458) UART: 0x3ffb7930   5b b6 0b e9 bd c9 b5 91  ff a4 5d 5b be b5 dd fd  |[.........][....|[0m
+[0;32mI (107458) UART: 0x3ffb7940   b9 6d 7c a5 59 5b be ff  ed bf bd fc e7 ed fc ef  |.m|.Y[..........|[0m
+[0;32mI (107468) UART: 0x3ffb7950   7f d7 ff db dd d9 5e ff  7f 6f ff d6 9f b7 da b3  |......^..o......|[0m
+[0;32mI (107478) UART: 0x3ffb7960   a7 8f 6e 8b 9a ff 97 8e  fe a4 65 6c 6c 6f 20 77  |..n.......ello w|[0m
+[0;32mI (107488) UART: 0x3ffb7970   6f 7e 7e 64 69 7b 5b b6  9f f9 bd dd b6 be 5e     |o~~di{[.......^|[0m
+
+Detected sign: L
+C: 0.023438, L: 0.972656, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.023438, L: 0.976562, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.027344, L: 0.972656, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+No sign detected
+C: 0.160156, L: 0.222656, Puno: 0.101562, Cruzados: 0.128906, Rock: 0.347656, Palma: 0.042969
+Max score indices: 1, 1, 1, 4
+[0;32mI (133808) UART: Wrote 29 bytes[0m
+[0;32mI (133808) UART: Received 127 bytes: 'o{ߛwo�mg^e~m��ɳ����������l�m�|&���ݬ�[_���z��Lello woznd�Y[�k������O�l���������e�������Y[����|�X���������e�!��������}'[0m
+[0;32mI (133818) UART: 0x3ffb7900   6f 7b df 9b 77 6f f6 6d  67 5e 65 7e 6d ef 95 d7  |o{..wo.mg^e~m...|[0m
+[0;32mI (133828) UART: 0x3ffb7910   c9 b3 91 ff ee 1f 9b ef  c1 dd fd b9 b7 6c cf|.............l.m|[0m
+[0;32mI (133838) UART: 0x3ffb7920   ee 7c 7f 26 bd ed bf dd  ac fd 5b 5f 8b e9 ff 7a  |.|.&......[_...z|[0m
+[0;32mI (133848) UART: 0x3ffb7930   ed ba 4c 65 6c 6c 6f 20  77 6f 7a 6e 64 ce 59 5b  |..Lello woznd.Y[|[0m
+[0;32mI (133848) UART: 0x3ffb7940   b6 6b e9 fd cd f3 f9 ff  4f f7 6c ee eb e9 d7 db  |.k......O.l.....|[0m
+[0;32mI (133858) UART: 0x3ffb7950   f1 f9 ff a7 65 7f fc cb  f9 cb f1 d5 ce 59 5b be  |....e........Y[.|[0m
+[0;32mI (133868) UART: 0x3ffb7960   0b e9 fd cf 7c e6 58 e5  7f ec 8f e9 ff c9 f7 d5  |....|.X.........|[0m
+[0;32mI (133878) UART: 0x3ffb7970   ff dd 65 fd 21 fb ff eb  e5 a7 ff 9b b5 e3 7d     |..e.!.........}|[0m
+
+No sign detected
+C: 0.332031, L: 0.238281, Puno: 0.062500, Cruzados: 0.078125, Rock: 0.238281, Palma: 0.046875
+
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download

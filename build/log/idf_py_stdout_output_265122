@@ -1,0 +1,8 @@
+[0;32mI (10618) UART: Received 12 bytes: '�z}�����K��'[0m
+[0;32mI (10618) UART: 0x3ffb7900   df 7a 7d 8b 8f bf ee fb  4b 17 9a f3              |.z}.....K...|[0m
+
+Detected sign: L
+C: 0.089844, L: 0.910156, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000
+
+Detected sign: L
+C: 0.210938, L: 0.789062, Puno: 0.000000, Cruzados: 0.000000, Rock: 0.000000, Palma: 0.000000

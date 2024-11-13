@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "person_detection",
-    "project_version":    "e8cccdb-dirty",
+    "project_version":    "fe3c936-dirty",
     "project_path":       "/home/vicenterey/esp/projects_tf/model/person_detection",
     "idf_path":           "/home/vicenterey/esp/idf/esp-idf",
     "build_dir":          "/home/vicenterey/esp/projects_tf/model/person_detection/build",
@@ -11,7 +11,7 @@
     "app_elf":            "person_detection.elf",
     "app_bin":            "person_detection.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.3-dev-2747-g4f3cd0deb9",
+    "git_revision":       "v5.3-dev-2747-g4f3cd0deb9-dirty",
     "target":             "esp32",
     "rev":                "0",
     "min_rev":            "0",

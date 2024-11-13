@@ -1,0 +1,4 @@
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc: In function 'void uart_init()':
+/home/vicenterey/esp/projects_tf/model/person_detection/main/detection_responder.cc:31:5: warning: missing initializer for member 'uart_config_t::rx_flow_ctrl_thresh' [-Wmissing-field-initializers]
+   31 |     };
+      |     ^
